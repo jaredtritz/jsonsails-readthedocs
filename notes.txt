@@ -1,0 +1,8 @@
+http://docs.readthedocs.io/en/latest/getting_started.html
+
+https://www.youtube.com/watch?feature=player_embedded&v=oJsUvBQyHBs
+  5:15
+
+sphinx-quickstart 
+
+
