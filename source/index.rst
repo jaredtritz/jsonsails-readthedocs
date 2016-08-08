@@ -1,22 +1,17 @@
-.. sails documentation master file, created by
-   sphinx-quickstart on Sat Aug  6 14:25:49 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to JSonSails!
+=====================
 
-Welcome to the documentation for JSonSails!
-=================================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   environments
+   module_ide
+   sails_api
+   included_objects 
+   module_configuration
+   permissions
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
