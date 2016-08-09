@@ -1,5 +1,5 @@
-Setup
-=====
+Setup Pages
+===========
 
 .. toctree::
     :maxdepth: 1
@@ -10,4 +10,5 @@ Setup
     sfiles
     jslibs
     refmods
+    uploads 
 

@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'JSonSails manual'
+project = 'JSonSails'
 copyright = '2016, Jared Tritz, Eujain Ting'
 author = 'Jared Tritz, Eujain Ting'
 

@@ -6,7 +6,7 @@ Introduction
     :maxdepth: 1
     :glob:
 
-    goals
     purpose
+    vision
     features
 

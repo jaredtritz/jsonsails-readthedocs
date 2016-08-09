@@ -10,12 +10,12 @@ Contents:
     :caption: Big Picture
 
     introduction/index
-    topics/index
+    concepts/index
 
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: Reference Manual
+    :caption: User Manual
 
     module_ide/index
     setup/index
