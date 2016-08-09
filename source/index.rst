@@ -24,25 +24,9 @@ Contents:
     :glob:
     :caption: User Manual
 
-    module_ide
-        module_composition
-        node_editor
-        ez_config
-        preview
-    setup
-        modules
-        ufiles
-        sfiles
-        jslibs
-        refmods
-    scripting_environment
-        quick-reference
-        module_js
-        module_logic
-        module_html
-        ufile_script
-        sfile_script
-        jslib_script
+    module_ide/index
+    setup/index
+    scripting/index
 
 .. toctree::
     :maxdepth: 1
