@@ -6,9 +6,13 @@ Introduction
     :maxdepth: 1
     :glob:
 
-    ez_config
-    module_composition
-    node_editor
-    preview
+    goals
+    purpose
+    features
+    modules 
+    sfiles
+    ufiles
+    refmods
+    permissions
 
 

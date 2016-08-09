@@ -10,14 +10,6 @@ Contents:
     :caption: Big Picture
 
     introduction/index
-    goals
-    purpose
-    features
-    modules 
-    sfiles
-    ufiles
-    refmods
-    permissions
 
 .. toctree::
     :maxdepth: 1
