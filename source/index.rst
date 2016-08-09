@@ -5,7 +5,7 @@ Welcome to JSonSails!
 Contents:
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :glob:
     :caption: Big Picture
 
