@@ -10,11 +10,12 @@ Contents:
     :caption: Big Picture
 
     introduction/index
+    topics/index
 
 .. toctree::
     :maxdepth: 1
     :glob:
-    :caption: User Manual
+    :caption: Reference Manual
 
     module_ide/index
     setup/index
@@ -25,10 +26,6 @@ Contents:
     :glob:
     :caption: Guides
 
-    tutorial
-    persisting_data
-    personalization
-    sharing_data
-    sharing_modules
-
+    tutorials/index
+    examples/index
 

@@ -9,10 +9,4 @@ Introduction
     goals
     purpose
     features
-    modules 
-    sfiles
-    ufiles
-    refmods
-    permissions
-
 
