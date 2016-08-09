@@ -13,7 +13,7 @@ Contents:
     topics/index
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :glob:
     :caption: Reference Manual
 
@@ -22,7 +22,7 @@ Contents:
     scripting/index
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :glob:
     :caption: Guides
 
