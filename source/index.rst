@@ -9,14 +9,14 @@ Contents:
     :glob:
     :caption: Big Picture
 
-    introduction
+    introduction/index
     goals
     purpose
     features
     modules 
     sfiles
     ufiles
-    refrence_modules
+    refmods
     permissions
 
 .. toctree::
