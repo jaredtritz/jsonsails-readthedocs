@@ -2,8 +2,6 @@ Welcome to JSonSails!
 =====================
 
 
-Contents:
-
 .. toctree::
     :maxdepth: 2
     :glob:
