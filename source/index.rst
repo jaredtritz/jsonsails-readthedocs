@@ -20,6 +20,7 @@ Contents:
     module_ide/index
     setup/index
     scripting/index
+    data_extraction
 
 .. toctree::
     :maxdepth: 2
@@ -27,5 +28,6 @@ Contents:
     :caption: Guides
 
     tutorials/index
+    patterns/index
     examples/index
 
