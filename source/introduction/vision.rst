@@ -43,7 +43,7 @@ Permission management
 
 All resources in JSonSails have an owner who must the grant permission to
 others who request to barrow the resource for their own use. In JSonSails
-collaborative development often means leveraging a module or bit of user data
+"collaborative development" often means leveraging a module or bit of user data
 that another developer owns.  Thus, we implement a robust and simple permission
 model, based on requesting and granting the privileges to use private
 resources.  
