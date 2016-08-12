@@ -8,14 +8,15 @@ user value in the form of any primitive Javascript data type or JSON data.
 
 .. note:: 
 
-  Programmers can think of UFiles as loosely typed user variables
+  Programmers can think of UFiles as loosely typed, infinite session, variables, which are loaded into the scope of your module code.
 
 Writing to UFiles
 """""""""""""""""
 
 When a UFile value is saved, provided the user has permission to write it, the
-value persists to the value owned by the authentication identity.  See also
-:ref:`ufile-permission`
+value persists to the value owned by the authentication identity.  
+
+See also :ref:`ufile-writing`
 
 Reading from UFiles
 """""""""""""""""""
@@ -24,7 +25,7 @@ When a stored UFile value is retrieved from the server its requested at one of t
 
 See also 
 
-* :ref:`ufile-permission`
+* :ref:`ufile-reading`
 * :ref:`uvalue-format`
 * :ref:`ufile-valet`
 
