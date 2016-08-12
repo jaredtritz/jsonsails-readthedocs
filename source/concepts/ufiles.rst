@@ -4,7 +4,11 @@ UFiles
 
 UFiles are user oriented data stores, where **user** means authentication identity.
 Creating a UFile produces a new storage container, which can store a unique
-user value in the form of any primitive Javascript data type or JSON data.
+user value in the form of any primitive Javascript data type or JSON data.  
+
+.. note:: 
+
+  Programmers can think of UFiles as loosely typed user variables
 
 Writing to UFiles
 """""""""""""""""
