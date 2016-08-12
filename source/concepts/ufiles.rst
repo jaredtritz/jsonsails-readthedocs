@@ -9,17 +9,20 @@ user value in the form of any primitive Javascript data type or JSON data.
 Writing to UFiles
 """""""""""""""""
 
-When a UFile value is saved it persists only the value owned by the authentication
-identity.  
+When a UFile value is saved, provided the user has permission to write it, the
+value persists to the value owned by the authentication identity.  See also
+:ref:`ufile-permission`
 
 Reading from UFiles
 """""""""""""""""""
 
-When a stored UFile value is retrieved from the server its requested in one of three ways:
+When a stored UFile value is retrieved from the server its requested at one of the three read levels.
 
-#. Just the user value
-#. Collection of all user values with anonymous labels
-#. Collection of all user values with identified labels
+See also 
+
+* :ref:`ufile-permission`
+* :ref:`uvalue-format`
+* :ref:`ufile-valet`
 
 Consists of
 """""""""""
