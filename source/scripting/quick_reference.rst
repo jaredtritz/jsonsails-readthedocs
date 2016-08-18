@@ -1,21 +1,31 @@
 
-Quick References
-================
+Quick Reference
+===============
 
 .. _`uvalue-format`:
 
-Format of UFile values
-^^^^^^^^^^^^^^^^^^^^^^
+UFile values format
+^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: json
     
     {
-      "ufileX": {
-          "real_id1": {"some-data":7},
-          "autenticated_id": {"some-data":7},
-          "real_id2": {"some-data":7},
-          ...
+      "ufileX_alias": {
+          "real_id1": {"some-prop":7},
+          "authenticated_id": {"some-prop":7},
+          "real_id2": {"some-prop":7}
       },
-      "ufileY": ...
+      "ufileY_alias":{"authenticated_id":"some_string"}
     }
+
+EzConfig
+^^^^^^^^
+
+.. code-block:: json
+
+    js.config
+
+Loading files from CDN
+^^^^^^^^^^^^^^^^^^^^^^
+
 

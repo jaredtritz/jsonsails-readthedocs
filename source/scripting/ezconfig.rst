@@ -14,8 +14,13 @@ The EzConfig script produces an EzConfig GUI interface, which in turn is
 used to edit the config JSON.  The config JSON is a per-module data
 structure which can be used in the module code to configure the module. 
 
+The main namespaces here are 
+
+#. js.ConfigApi 
+#. js.config
+
 JSON
-====
+^^^^
 
 .. code-block:: json
 
@@ -24,7 +29,7 @@ JSON
     }
 
 Script
-======
+^^^^^^
 
 .. code-block:: javascript
     
@@ -34,7 +39,7 @@ Script
     })
 
 GUI
-===
+^^^
 
 .. image:: ../../source/images/gui.png
     :width: 40%
