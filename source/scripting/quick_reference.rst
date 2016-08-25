@@ -9,14 +9,17 @@ UFile values format
 
 .. code-block:: json
     
-    {
-      "ufileX_alias": {
-          "real_id1": {"some-prop":7},
-          "authenticated_id": {"some-prop":7},
-          "real_id2": {"some-prop":7}
-      },
-      "ufileY_alias":{"authenticated_id":"some_string"}
-    }
+    { "ufileY_alias":{"authenticated_id":"some_string"} }
+
+Module JS
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: javascript
+
+    js.sfile['sfile_alias']
+    js.ufile['ufile_alias']
+    js.jslib['jslib_alias']
+
 
 EzConfig
 ^^^^^^^^
@@ -24,8 +27,6 @@ EzConfig
 .. code-block:: json
 
     js.config
-
-Loading files from CDN
-^^^^^^^^^^^^^^^^^^^^^^
-
+    js.ConfigApi.addLabel("label")
+    js.ConfigApi.addInput(field_name, callback)
 
