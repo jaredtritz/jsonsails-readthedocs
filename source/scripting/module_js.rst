@@ -65,6 +65,9 @@ included into a module.
     js.jslib.jslib_alias
     js.jslib['jslib_alias']
 
+
+.. _`loading-cdn`:
+
 Loading from CDN
 ^^^^^^^^^^^^^^^^
 
