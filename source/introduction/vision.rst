@@ -29,10 +29,12 @@ re-usability, and adaptability of a resource. We understand that a quick
 modification to the source code is sometimes just what the doctor ordered and
 aim to ensure this prescription is never thwarted by hidden source code.
 
+.. _`non-tech-developers`:
+
 Non-technical developers
 """"""""""""""""""""""""
 
-However, we also want to ensure resources, such as code and user data are easy
+We also want to ensure resources, such as code and user data are easy
 to adapt, share, evolve, and maintain, even for non-technical developers.
 Thus, we've designed our IDE to support configuation and composition of
 resources as well, giving this equal priority as technical developemnt of new

@@ -12,6 +12,5 @@ Scripting Environments
     ufile_script
     sfile_script
     jslib_script
-    ezconfig
 
 

@@ -13,6 +13,6 @@ and enables editing module code, e.x. HTML, JS, CSS, as well as configuration of
     module_composition
     node_editor
     preview
-    ez_config
+    ezconfig
 
 
