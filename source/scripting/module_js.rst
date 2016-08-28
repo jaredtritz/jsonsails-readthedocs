@@ -66,7 +66,19 @@ included into a module.
     js.jslib['jslib_alias']
 
 
-.. _`loading-cdn`:
+.. _`loading-js-cdn`:
+
+Logging
+^^^^^^^
+
+.. code-block:: javascript
+
+    // pageview: boolean (indicates to call Google analytics)
+    // elog: json object of named params for GA & jsonsails logging 
+    // json: extra json field GA doesn't handle but offers more flexiblity in jsonsails logging
+    js.logger.logEvent(pageview, elog, json)
+
+
 
 Loading from CDN
 ^^^^^^^^^^^^^^^^

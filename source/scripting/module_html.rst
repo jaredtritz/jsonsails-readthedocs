@@ -2,9 +2,11 @@
 Module HTML
 ===========
 
-Any valid HTML is acceptable, except script tags will not behave as expected. 
+Any valid HTML is acceptable, except script tags will not behave as expected 
+because the script is not added to the HEAD of the document.  Link tags for
+loading css from a CDN works fine.
 
-See also :ref:`loading-cdn`
+See also :ref:`loading-js-cdn`
 
 Access to UFiles
 ^^^^^^^^^^^^^^^^
