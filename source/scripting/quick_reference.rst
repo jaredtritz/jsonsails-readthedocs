@@ -19,6 +19,7 @@ Module JS
     js.sfile['sfile_alias']
     js.ufile['ufile_alias']
     js.jslib['jslib_alias']
+    js.logger.logEvent(pageview, elog, json)
 
 
 EzConfig
@@ -29,13 +30,5 @@ EzConfig
     js.config
     js.ConfigApi.addLabel("label")
     js.ConfigApi.addInput(field_name, callback)
-
-Logging
-^^^^^^^
-
-.. code-block:: javascript
-
-    js.logger.logEvent(pageview, elog, json)
-
 
 
