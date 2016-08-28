@@ -30,3 +30,12 @@ EzConfig
     js.ConfigApi.addLabel("label")
     js.ConfigApi.addInput(field_name, callback)
 
+Logging
+^^^^^^^
+
+.. code-block:: javascript
+
+    js.logger.logEvent(pageview, elog, json)
+
+
+

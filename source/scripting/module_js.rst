@@ -71,6 +71,15 @@ included into a module.
 Logging
 ^^^^^^^
 
+There is a seperate table in the database for logging events, and the interface
+for pushing data into that table is the same as the Google Analytics interface
+except that the JSonSails table allows for more information to be pushed, like
+the user id, and an extra json field.
+
+The GA logging has the benefit of providing many useful views of the resource
+usage, while the JSonSails log table, when exported for analysis can provide
+much more detailed individual user data.
+
 .. code-block:: javascript
 
     // pageview: boolean (indicates to call Google analytics)
