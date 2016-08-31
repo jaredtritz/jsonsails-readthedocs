@@ -37,11 +37,19 @@ The main namespaces here are
 #. js.config
 
 .. code-block:: javascript
-    
+
+    // Label 
     js.ConfigApi.addLabel("Paste static JSON database here:")
+    
+    // Small text input
     js.ConfigApi.addInput(js.config.field_name, function(val){
       js.config.field_name = val;
     })
+
+    // Large text area
+    js.ConfigApi.addText(js.config.db_name, function(val){
+      js.config.db_name = val;
+    })    
 
 GUI
 ^^^
