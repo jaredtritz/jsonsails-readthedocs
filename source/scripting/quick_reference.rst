@@ -18,6 +18,7 @@ Module JS
 
     js.sfile['sfile_alias']
     js.ufile['ufile_alias']
+    js.ufile['ufile_alias'] = 'val' // assignment
     js.jslib['jslib_alias']
     js.logger.logEvent(pageview, elog, json)
 

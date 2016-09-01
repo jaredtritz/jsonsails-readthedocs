@@ -14,6 +14,7 @@ included into a module.
 
     js.ufile.ufile_alias
     js.ufile['ufile_alias']
+    js.ufile['ufile_alias'] = 'val' // assignment
 
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
