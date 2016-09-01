@@ -72,22 +72,62 @@ included into a module.
 Logging
 ^^^^^^^
 
-There is a seperate table in the database for logging events, and the interface
+There is a seperate table in the database called the ELog table, for logging events, and the interface
 for pushing data into that table is the same as the Google Analytics interface
 except that the JSonSails table allows for more information to be pushed, like
 the user id, and an extra json field.
 
-The GA logging has the benefit of providing many useful views of the resource
-usage, while the JSonSails log table, when exported for analysis can provide
-much more detailed individual user data.
+A call the logger might look something like this
 
 .. code-block:: javascript
 
-    // pageview: boolean (indicates to call Google analytics)
+    // pageview: boolean (indicates to call Google analytics w/ elog information)
     // elog: json object of named params for GA & jsonsails logging 
     // json: extra json field GA doesn't handle but offers more flexiblity in jsonsails logging
+
+    var json = {};
+    var question = model.get_question();
+    json.choices = model.get_choices();
+    json.answer = model.answer;
+    var correct = model.resp_correct();
+    var elog = {
+        'eventCategory': 'nts',
+        'eventAction': 'answer',
+        'eventLabel': 'correct',
+        'eventValue': correct
+    };
+    var elog = {}
+    var json = {}
     js.logger.logEvent(pageview, elog, json)
 
+
++----------+--------------------------+--------------------+
+|       ELog Table                                         |
++----------+--------------------------+--------------------+
+| Column   | Type                     |   Source           |
++==========+==========================+====================+
++ id       | integer                  |   automatic        |
++----------+--------------------------+--------------------+
+| mwhen    | timestamp with time zone |   automatic        |
++----------+--------------------------+--------------------+
++ url      | text                     |   automatic        |
++----------+--------------------------+--------------------+
+| category | text                     |   elog => GA       |
++----------+--------------------------+--------------------+
++ action   | text                     |   elog => GA       |
++----------+--------------------------+--------------------+
+| label    | text                     |   elog => GA       |
++----------+--------------------------+--------------------+
++ value    | integer                  |   elog => GA       |
++----------+--------------------------+--------------------+
+| json     | text                     |   json             |
++----------+--------------------------+--------------------+
++ who      | character varying(30)    |   automatic        |
++----------+--------------------------+--------------------+
+
+The GA logging has the benefit of providing many useful views of the resource
+usage, while the JSonSails log table, when exported for analysis can provide
+much more detailed individual user data.
 
 
 Loading from CDN
