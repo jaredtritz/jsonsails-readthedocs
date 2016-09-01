@@ -69,6 +69,13 @@ included into a module.
 
 .. _`loading-js-cdn`:
 
+Re-Rendering
+^^^^^^^^^^^^
+
+.. code-block:: javascript
+
+    js.render() // not sure yet if this is how it will/should work?
+
 Logging
 ^^^^^^^
 
