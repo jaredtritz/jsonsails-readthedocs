@@ -88,7 +88,7 @@ Re-Rendering
 
 .. code-block:: javascript
 
-    js.render() // not sure yet if this is how it will/should work?
+    // this is not implemented yet 
 
 Logging
 ^^^^^^^
