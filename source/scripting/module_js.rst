@@ -4,17 +4,13 @@ Module JS
 
 Any valid javascript is acceptable  
 
-Access to UFiles
+Loading from CDN
 ^^^^^^^^^^^^^^^^
 
-The following are both valid methods of accessing a UFile which has been
-included into a module.
-
-.. code-block:: javascript
-
-    js.ufile.ufile_alias
-    js.ufile['ufile_alias']
-    js.ufile['ufile_alias'] = 'val' // assignment
+Script tags in the HTML will not load Javascript from a CDN b/c the module is
+rendered after the page has been loaded. Therefore, to load an external Javascript 
+file you should do it in the JS code, and wait for the script to finish loading 
+before trying to use it.  This can be abstracted into a JSLib for convenience.  
 
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
@@ -42,6 +38,24 @@ collection and ufileY_alias is requested as only the users own value.
       "ufileY_alias":{"authenticated_id":"some_string"}
     }
 
+
+Access to UFiles
+^^^^^^^^^^^^^^^^
+
+The following are valid methods of reading/writing UFiles which have been
+included into a module.  The callback promise can be used to respond once the
+server has saved the value.
+
+.. code-block:: javascript
+
+    // collection of user values
+    js.ufile['ufile_alias']
+    // user value
+    js.ufile['ufile_alias'][js.username]
+    // set user value
+    js.ufile['ufile_alias'][js.username].set('new value')
+    // OR
+    js.ufile['ufile_alias'][js.username].set('new value').then( ()=>{alert('done')} )
 
 
 Access to SFiles
@@ -135,15 +149,6 @@ A call the logger might look something like this
 The GA logging has the benefit of providing many useful views of the resource
 usage, while the JSonSails log table, when exported for analysis can provide
 much more detailed individual user data.
-
-
-Loading from CDN
-^^^^^^^^^^^^^^^^
-
-Script tags in the HTML will not load Javascript from a CDN b/c the module is
-rendered after the page has been loaded. Therefore, to load an external Javascript 
-file you should do it in the JS code, and wait for the script to finish loading 
-before trying to use it.  This can be abstracted into a JSLib for convenience.  
 
 
 
