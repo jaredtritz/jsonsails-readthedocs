@@ -4,6 +4,8 @@ Module JS
 
 Any valid javascript is acceptable  
 
+.. _`loading-js-cdn`:
+
 Loading from CDN
 ^^^^^^^^^^^^^^^^
 
@@ -81,7 +83,6 @@ included into a module.
     js.jslib['jslib_alias']
 
 
-.. _`loading-js-cdn`:
 
 Re-Rendering
 ^^^^^^^^^^^^
