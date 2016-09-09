@@ -50,15 +50,11 @@ server has saved the value.
 
 .. code-block:: javascript
 
-    // collection of user values
-    js.ufile['ufile_alias']
-    // user value
-    js.ufile['ufile_alias'][js.username]
-    // set user value
-    js.ufile['ufile_alias'][js.username].set('new value')
-    // OR
-    js.ufile['ufile_alias'][js.username].set('new value').then( ()=>{alert('done')} )
-
+    js.ufile.alias.val()            // your own value
+    js.ufile.alias.val('username')  // other value
+    js.ufile.alias.collection       // {username: value} (immutable)
+    js.ufile.alias.get()            // fetch own value from server
+    js.ufile.alias.set('new value') // update value to server
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^
