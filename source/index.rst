@@ -15,8 +15,8 @@ Welcome to JSonSails!
     :glob:
     :caption: User Manual
 
-    module_ide/index
     setup/index
+    module_ide/index
     scripting/index
     data_extraction
 
