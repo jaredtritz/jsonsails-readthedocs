@@ -2,8 +2,8 @@
 Concepts
 ========
 
-In order to understand how JSonSails works, it's helpful to understand some 
-key concepts first.
+In order to gain a better understanding of JSonSails, let's look at some of the
+key concepts in more detail.
 
 .. toctree::
     :maxdepth: 1
