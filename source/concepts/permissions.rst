@@ -1,7 +1,8 @@
 Permissions
 ===========
 
-The concept of permission comes up in a couple different ways.
+Permissions are what allow owners to manage and track how their resources
+are used by others.
 
 Permission to include
 ^^^^^^^^^^^^^^^^^^^^^
@@ -19,56 +20,63 @@ If the same resource has been included multiple ways, but one way has not been
 permitted, the item is not loaded.
 
 When you want to use someone else's resource as part of your module the first
-step is to request its use by simply including it.  This will generate a
-request to the owner who can either permit use or ignore the request.  Requests
-are passive, meaning that the owner can review requests at their leasure, but
-there is no notification.  Therefore, if you want to use someone else's
-resource it's best to coordinate and discuss with them outside the system via
-email or some other means of communication.  
+step is to request it by simply including it.  This will generate a request to
+the owner who can either permit use or ignore the request.  Requests are
+passive, meaning that the owner can review requests at their leisure, but there
+is no notification.  Therefore, if you want to use someone's resource it's best
+to coordinate with them outside the system via email or something, asking them
+to permit your request.  Their user profile page might be helpful in finding
+their email address.
 
 .. _`ufile-writing-permission`:
 
 UFile Writing
 ^^^^^^^^^^^^^
 
-UFiles are set by the owner to have one of these two permission levels for writing
+UFiles permission levels for writing are set by the owner to have one of these
+two values:
 
-#. No user writing is permitted
+#. Only the UFile owner can write values 
 #. Users can write their own value
 
-Data which you load into the system, or manage using the special valet
-permissions, might be something you don't want to allow users to edit, like
-grades for example.  On the other hand, you often want users to be able to set
-the value of their data.
+Data which you load into the system might be something you want to protect
+against users editing their own value, like grades for example.  On the other
+hand, you often want users to be able to set their own value.
 
 .. _`ufile-reading-permission`:
 
 UFile Reading
 ^^^^^^^^^^^^^
 
-UFiles are set by the owner to have one of these three permission levels for
-reading
+UFiles permission levels for reading are set by the owner to have one of these
+three values:
 
-#. Just the user value
-#. Collection of all user values with anonymous labels
-#. Collection of all user values with identified labels
+#. Just the user's own value
+#. Collection of all user values with anonymous identifiers
+#. Collection of all user values with real identifiers
 
-As long as the request to read is equal or below the max permission level set
-by the owner, then the request will be honored. Please note, that if one
-resource requests a UFile at level 1, and another at level 2, where the limit
-permits level 2, then only level 2 will be loaded as it also contains the
-information of a level 1 request.
+As long as the read request level is equal or below the max permission level
+set by the owner, then the request will be honored. 
+
+.. note:: 
+
+  If one resource requests a UFile at level 1, and another at level 2, where the
+  limit permits level 2, then only level 2 will be loaded as it also contains the
+  information of a level 1 request.
 
 .. _`ufile-valet`:
 
 UFile valet users 
 ^^^^^^^^^^^^^^^^^
 
-Sometimes it may be desireable to allow only certain users to load certain
-UFile data, especially collections.  In this case, the valet permissions allow the
-module developer to set the include as a "valet" request for that UFile.  The
-UFile owner then has to grant specific valet users unique read permissions
-before the module will load the data appropriatly for those users.
+Valet users can may be granted unique read/write permissions for a UFile.
+Sometimes it is desirable to grant only certain users permission to load a
+UFile collection or write user values.  In this case, the UFile may include
+valet users, and their read/write permissions are set individually.
 
+.. note:: 
+
+  Including valet users may slow performance slightly since it will generate a
+  "valet" check whenever that UFile is requested.
 
 
