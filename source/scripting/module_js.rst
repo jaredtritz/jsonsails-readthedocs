@@ -14,6 +14,8 @@ rendered after the page has been loaded. Therefore, to load an external Javascri
 file you should do it in the JS code, and wait for the script to finish loading 
 before trying to use it.  This can be abstracted into a JSLib for convenience.  
 
+.. _`uvalue-format`:
+
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
 
@@ -41,6 +43,8 @@ collection and ufileY_alias is requested as only the users own value.
     }
 
 
+.. _`ufile-writing-modulejs`:
+
 Access to UFiles
 ^^^^^^^^^^^^^^^^
 
@@ -55,6 +59,8 @@ server has saved the value.
     js.ufile.alias.collection       // {username: value} (immutable)
     js.ufile.alias.get()            // fetch own value from server
     js.ufile.alias.set('new value') // update value to server
+    // set with callback
+    js.ufile.alias.set('new value').then( ()=>{alert('done')} )  
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^

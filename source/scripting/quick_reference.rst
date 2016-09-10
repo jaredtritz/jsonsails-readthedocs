@@ -2,15 +2,12 @@
 Quick Reference
 ===============
 
-.. _`uvalue-format`:
-
 Authenticated User
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: json
 
     js.username
-
 
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
@@ -24,10 +21,12 @@ Module JS
 
 .. code-block:: javascript
 
-    js.ufile['ufile_alias']
-    js.ufile['ufile_alias'][js.username]
-    js.ufile['ufile_alias'][js.username].set('new value')
-    js.ufile['ufile_alias'][js.username].set('new value').then( ()=>{alert('done')} )
+    js.ufile.alias.val()            
+    js.ufile.alias.val('username')  
+    js.ufile.alias.collection       
+    js.ufile.alias.get()            
+    js.ufile.alias.set('new value') 
+    js.ufile.alias.set('new value').then( ()=>{alert('done')} )
     js.sfile['sfile_alias']
     js.jslib['jslib_alias']
     js.logger.logEvent(pageview, elog, json)

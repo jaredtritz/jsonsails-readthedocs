@@ -26,7 +26,7 @@ there is no notification.  Therefore, if you want to use someone else's
 resource it's best to coordinate and discuss with them outside the system via
 email or some other means of communication.  
 
-.. _`ufile-writing`:
+.. _`ufile-writing-permission`:
 
 UFile Writing
 ^^^^^^^^^^^^^
@@ -41,7 +41,7 @@ permissions, might be something you don't want to allow users to edit, like
 grades for example.  On the other hand, you often want users to be able to set
 the value of their data.
 
-.. _`ufile-reading`:
+.. _`ufile-reading-permission`:
 
 UFile Reading
 ^^^^^^^^^^^^^

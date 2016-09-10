@@ -2,7 +2,7 @@
 JSLibs
 ======
 
-JSLibs are a flexible abstraction which helps developers push generalizable
+JSLibs are a flexible abstraction to help developers move generalizable
 functionality into re-usable JavaScript libraries.
 
 Consists of
