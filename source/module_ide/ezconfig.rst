@@ -2,15 +2,11 @@
 Ez Configuration
 ================
 
-The EzConfig has three parts, and each of these config parts is viewable under
-its own tab in the IDE, at the root node of a module, or the refnode of a
-module.  
+The EzConfig has three parts, the script, JSON, and GUI. Each of these config
+parts is viewable under its own tab in the IDE, at the root node of a module,
+or the refnode of a module.  
 
-#. JSON
-#. Script
-#. GUI 
-
-The EzConfig script produces an EzConfig GUI interface, which in turn is 
+The script produces an EzConfig GUI interface, which in turn is 
 used to edit the config JSON.  The config JSON is a per-module data
 structure which can be used in the module code to configure the module. 
 
@@ -19,8 +15,8 @@ See also
 #. :ref:`module-config`
 #. :ref:`non-tech-developers`
 
-JSON
-^^^^
+Config JSON
+^^^^^^^^^^^
 
 .. code-block:: json
 
@@ -28,8 +24,8 @@ JSON
       "field_name": "some val"
     }
 
-Script
-^^^^^^
+Config Script
+^^^^^^^^^^^^^
 
 The main namespaces here are 
 
@@ -51,8 +47,8 @@ The main namespaces here are
       js.config.db_name = val;
     })    
 
-GUI
-^^^
+Config GUI
+^^^^^^^^^^
 
 .. image:: ../../source/images/gui.png
     :width: 40%

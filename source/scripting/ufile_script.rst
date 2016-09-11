@@ -11,4 +11,5 @@ replaces the value in the Module JS and Module HTML contexts.
     js.val()            // your own value
     js.val('username')  // other value
     js.collection       // {username: value} (immutable)
+    js.jslib.alias      // jslib included under alias
 
