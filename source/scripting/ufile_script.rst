@@ -13,3 +13,6 @@ replaces the value in the Module JS and Module HTML contexts.
     js.collection       // {username: value} (immutable)
     js.jslib.alias      // jslib included under alias
 
+    // set hook to return value that is sent when calling js.ufile.alias.set in Module JS
+    js.set = function(obj){ return obj.prop }
+

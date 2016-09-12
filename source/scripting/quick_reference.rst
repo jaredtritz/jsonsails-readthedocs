@@ -52,6 +52,7 @@ UFile script
     js.val('username')  
     js.collection       
     js.jslib.alias      
+    js.set = function(obj){ return obj.prop }
 
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
