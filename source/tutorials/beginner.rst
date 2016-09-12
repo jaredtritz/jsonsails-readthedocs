@@ -1,4 +1,5 @@
 
+.. _`tutorial-beginner`:
 
 Basic Tutorial
 ==============

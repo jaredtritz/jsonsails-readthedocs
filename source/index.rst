@@ -1,6 +1,7 @@
 Welcome to JSonSails!
 =====================
 
+You may want to start here: :ref:`tutorial-beginner`
 
 .. toctree::
     :maxdepth: 2
