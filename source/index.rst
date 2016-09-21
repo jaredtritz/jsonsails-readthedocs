@@ -1,5 +1,8 @@
-Welcome to JSonSails!
-=====================
+
+.. _JSonSails.com: https:jsonsails.com
+
+Welcome to JSonSails.com_ docs
+===================================
 
 You may want to start here: :ref:`tutorial-beginner`
 
