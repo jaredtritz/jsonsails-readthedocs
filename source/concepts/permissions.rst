@@ -1,8 +1,10 @@
 Permissions
 ===========
 
-Permissions are what allow owners to manage and track how their resources
-are used by others.
+Permissions are what allow owners to manage and track how their resources are
+used by others.  
+
+.. _`including-permission`:
 
 Permission to include
 ^^^^^^^^^^^^^^^^^^^^^
@@ -27,6 +29,12 @@ is no notification.  Therefore, if you want to use someone's resource it's best
 to coordinate with them outside the system via email or something, asking them
 to permit your request.  Their user profile page might be helpful in finding
 their email address.
+
+Permission requests can be reviewed either from the setup page
+of the including object, or on the requests page which aggregates all requests
+made by the authenticated user.  Permission approvals can be granted either from
+the setup page for the object being included, or from the approvals page which
+aggregates all requested for objects owned by the authenticated user. 
 
 .. _`ufile-writing-permission`:
 

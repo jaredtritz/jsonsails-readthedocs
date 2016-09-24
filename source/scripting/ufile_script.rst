@@ -1,3 +1,4 @@
+.. _`script-ufiles`:
 
 UFile Script
 ============
