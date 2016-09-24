@@ -1,6 +1,6 @@
 
-Tutorials
-=========
+Video Tutorials
+===============
 
 
 .. toctree::
@@ -8,4 +8,6 @@ Tutorials
     :glob:
 
     beginner
+
+
 

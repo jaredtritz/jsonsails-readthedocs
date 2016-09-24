@@ -30,6 +30,5 @@ You may want to start here: :ref:`tutorial-beginner`
     :caption: Guides
 
     tutorials/index
-    patterns/index
     examples/index
 
