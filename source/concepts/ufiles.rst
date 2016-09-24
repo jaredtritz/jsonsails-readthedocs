@@ -12,7 +12,7 @@ value per user in the form of any primitive Javascript data type or JSON data.
   variables, which are loaded into the scope of the module code.
 
 Writing to UFiles
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 
 When a UFile value is saved, provided the user has permission to write it, the
 value persists to the value owned by the authentication identity.  
@@ -23,7 +23,7 @@ See also
 * :ref:`ufile-writing-modulejs`
 
 Reading from UFiles
-"""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^
 
 UFile values are loaded into the module context under the alias specified.  The value
 is then modified, persisted, or refreshed by the module code.
@@ -36,7 +36,7 @@ See also
 * :ref:`ufile-valet`
 
 Consists of
-"""""""""""
+^^^^^^^^^^^
 
 * Script (Javascript)
 * JSLibs (JavaScript libraries)

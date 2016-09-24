@@ -1,3 +1,4 @@
+.. _`script-jslibs`:
 
 JSLib Script
 ============
