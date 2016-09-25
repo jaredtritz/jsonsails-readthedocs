@@ -2,7 +2,7 @@ Node Tree
 ==========
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :glob:
 
     root_node

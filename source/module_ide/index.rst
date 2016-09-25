@@ -12,7 +12,6 @@ and enables editing module code, e.x. HTML, JS, CSS, as well as configuration of
 
     palette
     node_tree/index
-    editor
     preview
     saving
     ezconfig
