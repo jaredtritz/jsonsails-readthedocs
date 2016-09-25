@@ -10,7 +10,7 @@ reference the object in the corresponding scripting environment.
 
 It is also where you can pass the ownership of the object.
 
-.. note:: 
+.. warning:: 
   
   Don't forget to save your changes!  After editing an object, use ctrl-s to
   save the changes.
