@@ -2,7 +2,7 @@
 Quick Reference
 ===============
 
-All in one spot API syntax reference...
+All in one spot API syntax reference for various enviornments.
 
 Module HTML
 ^^^^^^^^^^^
@@ -31,8 +31,16 @@ Module JS
     js.logger.logEvent(pageview, elog, json)
 
 
-EzConfig
-^^^^^^^^
+Logic
+^^^^^
+
+.. code-block:: javascript
+
+    js.ufile.alias.*
+
+
+Config Script
+^^^^^^^^^^^^^
 
 .. code-block:: json
 

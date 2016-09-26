@@ -7,20 +7,6 @@ Ez Configuration
   This interface will eventually be accessible by its own module specific url,
   but for now is embedded in the main IDE interface for the module.
 
-.. _`refnode-config-json`:
-
-Config JSON
-^^^^^^^^^^^
-
-The config is JSON data structure which is accessible in module JS context.
-
-.. code-block:: json
-
-    {
-      "field_name": "some val"
-    }
-
-
 .. _`refnode-config-script`:
 
 Config Script
@@ -47,6 +33,7 @@ The main namespaces here are
     })    
 
 
+
 .. _`refnode-config-gui`:
 
 Config GUI
@@ -57,6 +44,20 @@ properties of the config JSON.
 
 .. image:: ../../source/images/gui.png
     :width: 40%
+
+
+.. _`refnode-config-json`:
+
+Config JSON
+^^^^^^^^^^^
+
+The config is JSON data structure which is accessible in module JS context.
+
+.. code-block:: json
+
+    {
+      "field_name": "some val"
+    }
 
 
 

@@ -4,6 +4,8 @@ Module JS
 
 Any valid javascript is acceptable  
 
+.. _`uvalue-format`:
+
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
 
@@ -151,8 +153,6 @@ Script tags in the HTML will not load Javascript from a CDN b/c the module is
 rendered after the page has been loaded. Therefore, to load an external Javascript 
 file you should do it in the JS code, and wait for the script to finish loading 
 before trying to use it.  This can be abstracted into a JSLib for convenience.  
-
-.. _`uvalue-format`:
 
 
 
