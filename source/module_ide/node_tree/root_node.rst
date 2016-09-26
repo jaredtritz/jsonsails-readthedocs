@@ -1,6 +1,10 @@
 Root Node
 =========
 
+Important points:
+
+* only node w/ parent property null
+* provides interface to manage the configuration
 
 
 Props

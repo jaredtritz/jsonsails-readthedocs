@@ -4,7 +4,29 @@ Node Tree
 Important points:
 
 * determines layout of module
-* rendering order of Nodes
+* rendering order of nodes
+* parent/child properties
+* node isolation
+
+.. _`node-props-table`:
+
+Node Properties
+^^^^^^^^^^^^^^^
+
++------------------------+------+------+------------+----------+--------+
+|                        |         Node type                            |
++                        +------+------+------------+----------+--------+
+|                        | Root | Leaf | Horizontal | Vertical | Refmod |
++========================+======+======+============+==========+========+
+| Title                  |  x   |  x   |     x      |     x    |   x    |
++------------------------+------+------+------------+----------+--------+
+| Outer HTML tag         |  x   |  x   |     x      |     x    |        |
++------------------------+------+------+------------+----------+--------+
+| Outer HTML tag classes |  x   |  x   |     x      |     x    |   x    |
++------------------------+------+------+------------+----------+--------+
+| Column widths          |      |      |     x      |          |        |
++------------------------+------+------+------------+----------+--------+
+
 
 
 .. toctree::
