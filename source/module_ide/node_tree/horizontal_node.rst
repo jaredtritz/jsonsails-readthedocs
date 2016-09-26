@@ -3,13 +3,13 @@ Horizontal node
 
 
 
-Props tab
-*********
+Props
+*****
 
 
 
-Logic tab
-*********
+Logic
+*****
 
 
 

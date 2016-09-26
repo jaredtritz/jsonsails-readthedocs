@@ -7,8 +7,9 @@ Scripting Environments
 
     quick_reference
     module_js
-    module_logic
     module_html
+    module_css
+    logic
     ufile_script
     sfile_script
     jslib_script

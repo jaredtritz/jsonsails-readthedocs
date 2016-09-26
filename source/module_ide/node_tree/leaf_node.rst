@@ -8,28 +8,28 @@ Important points:
 
 
 
-Props tab
-*********
+Props
+*****
 
 
 
-HTML tab
-********
+HTML
+****
 
 
 
-JS tab
-******
+JS
+**
 
 
 
-CSS tab
-*******
+CSS
+***
 
 
 
-Logic tab
-*********
+Logic
+*****
 
 
 

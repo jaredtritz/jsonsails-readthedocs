@@ -8,20 +8,20 @@ Props
 
 
 
-Config
-^^^^^^
+Config JSON
+^^^^^^^^^^^
 
-
+See :ref:`refnode-config-json`
 
 Config Script
 ^^^^^^^^^^^^^
 
+See :ref:`refnode-config-script`
 
 
-EzConfig
-^^^^^^^^
+Config GUI
+^^^^^^^^^^
 
-
-
+See :ref:`refnode-config-gui`
 
 

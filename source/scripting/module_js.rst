@@ -4,18 +4,6 @@ Module JS
 
 Any valid javascript is acceptable  
 
-.. _`loading-js-cdn`:
-
-Loading from CDN
-^^^^^^^^^^^^^^^^
-
-Script tags in the HTML will not load Javascript from a CDN b/c the module is
-rendered after the page has been loaded. Therefore, to load an external Javascript 
-file you should do it in the JS code, and wait for the script to finish loading 
-before trying to use it.  This can be abstracted into a JSLib for convenience.  
-
-.. _`uvalue-format`:
-
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
 
@@ -153,6 +141,18 @@ The GA logging has the benefit of providing many useful views of the resource
 usage, while the JSonSails log table, when exported for analysis can provide
 much more detailed individual user data.
 
+
+.. _`loading-js-cdn`:
+
+Loading from CDN
+^^^^^^^^^^^^^^^^
+
+Script tags in the HTML will not load Javascript from a CDN b/c the module is
+rendered after the page has been loaded. Therefore, to load an external Javascript 
+file you should do it in the JS code, and wait for the script to finish loading 
+before trying to use it.  This can be abstracted into a JSLib for convenience.  
+
+.. _`uvalue-format`:
 
 
 

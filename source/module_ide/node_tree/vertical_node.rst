@@ -3,13 +3,13 @@ Vertical Node
 
 
 
-Props tab
-*********
+Props
+*****
 
 
 
-Logic tab
-*********
+Logic
+*****
 
 
 
