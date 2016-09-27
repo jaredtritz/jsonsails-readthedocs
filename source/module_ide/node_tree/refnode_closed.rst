@@ -1,3 +1,5 @@
+.. _`refnode-closed`:
+
 Referance Node (closed)
 =======================
 

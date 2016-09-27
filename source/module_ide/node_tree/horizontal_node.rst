@@ -1,3 +1,5 @@
+.. _`horizontal-node`:
+
 Horizontal node
 ===============
 

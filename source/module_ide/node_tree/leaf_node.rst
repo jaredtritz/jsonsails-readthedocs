@@ -1,3 +1,5 @@
+.. _`leaf-node`:
+
 Leaf Node
 =========
 

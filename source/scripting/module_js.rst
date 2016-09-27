@@ -75,6 +75,18 @@ included into a module.
     js.jslib['jslib_alias']
 
 
+Node properties
+^^^^^^^^^^^^^^^
+
+Node properties can be handy to communicate between nodes, or use the node ID
+to scope a a DOM search. 
+
+.. code-block:: javascript
+
+    js.node.parent    // returns parent node (except root returns null)
+    js.node.children  // returns list of child nodes 
+    js.node.id        // returns node id, also given to node wrapping html tag
+    js.node.title     // node title, set from node property
 
 Re-Rendering
 ^^^^^^^^^^^^

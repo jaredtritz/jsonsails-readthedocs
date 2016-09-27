@@ -1,3 +1,5 @@
+.. _`vertical-node`:
+
 Vertical Node
 =============
 

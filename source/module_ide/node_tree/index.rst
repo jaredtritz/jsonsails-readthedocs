@@ -6,6 +6,7 @@ Node Tree
 Important points:
 
 * determines layout of module
+* select a node in the tree to focus on and edit it
 * rendering order of nodes
 * parent/child properties
 * node isolation

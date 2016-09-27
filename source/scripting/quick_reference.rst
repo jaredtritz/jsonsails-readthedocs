@@ -29,6 +29,10 @@ Module JS
     js.sfile.alias.???
     js.jslib.alias
     js.logger.logEvent(pageview, elog, json)
+    js.node.parent
+    js.node.children
+    js.node.id
+    js.node.title
 
 
 Logic
