@@ -1,15 +1,13 @@
 Vertical Node
 =============
 
+Contents of this layout container are arranged vertical.
 
+See also:
 
-Props
-*****
+* :ref:`node-properties`
+* :ref:`script-logic`
 
-
-
-Logic
-*****
 
 
 

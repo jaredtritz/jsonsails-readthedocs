@@ -1,19 +1,11 @@
 Horizontal node
 ===============
 
+Contents of this layout container are arranged horizontal.
 
+See also:
 
-Props
-*****
-
-
-
-Logic
-*****
-
-
-
-
-
+* :ref:`node-properties`
+* :ref:`script-logic`
 
 

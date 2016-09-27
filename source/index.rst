@@ -17,6 +17,14 @@ You may want to start here: :ref:`tutorial-beginner`
 .. toctree::
     :maxdepth: 2
     :glob:
+    :caption: Guides
+
+    tutorials/index
+    examples/index
+
+.. toctree::
+    :maxdepth: 5
+    :glob:
     :caption: User Manual
 
     setup/index
@@ -24,11 +32,4 @@ You may want to start here: :ref:`tutorial-beginner`
     scripting/index
     data_extraction
 
-.. toctree::
-    :maxdepth: 2
-    :glob:
-    :caption: Guides
-
-    tutorials/index
-    examples/index
 

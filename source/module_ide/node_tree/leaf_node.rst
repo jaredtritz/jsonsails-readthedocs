@@ -7,12 +7,6 @@ Important points:
 * rendering order of HTML and JS
 
 
-
-Props
-*****
-
-
-
 HTML
 ****
 
@@ -27,10 +21,10 @@ CSS
 ***
 
 
+See also:
 
-Logic
-*****
-
+* :ref:`node-properties`
+* :ref:`script-logic`
 
 
 

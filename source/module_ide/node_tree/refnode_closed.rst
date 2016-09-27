@@ -8,11 +8,9 @@ Important points:
 * rendered in iframe
 
 
-Props
-^^^^^
-
 See also:
 
+* :ref:`node-properties`
 * :ref:`refnode-config-script`
 * :ref:`refnode-config-gui`
 * :ref:`refnode-config-json`
