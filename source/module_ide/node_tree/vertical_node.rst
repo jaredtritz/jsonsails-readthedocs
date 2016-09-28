@@ -3,7 +3,9 @@
 Vertical Node
 =============
 
-Contents of this layout container are arranged vertical.
+The built-in vertical node is a container node and controls layout positioning
+of the nodes inside, ensuring they are arranged vertical. 
+
 
 See also:
 

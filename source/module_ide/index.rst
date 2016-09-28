@@ -13,7 +13,7 @@ by coding them in raw HTML, JS, CSS.
 
     palette
     node_tree/index
-    preview
+    edit_preview
     saving
     ezconfig
 

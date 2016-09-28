@@ -1,3 +1,4 @@
+.. _`script-module-html`:
 
 Module HTML
 ===========

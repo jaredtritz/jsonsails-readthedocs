@@ -7,9 +7,6 @@ palette are the built-in node types, and the remaining items are modules added
 by the user. Palette items can be added to the current module's node tree using
 drag/drop. 
 
-
-  "attention", "caution", "danger", "error", "hint", "important", "note", "tip", "warning", "admonition"
-
 .. important:: Drag/drop from palette has unsolved bug and often requires a browser reload to begin working
 
 For more information on the 4 types of nodes found on the palette:

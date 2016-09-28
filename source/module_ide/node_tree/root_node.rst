@@ -1,11 +1,9 @@
 Root Node
 =========
 
-Important points:
-
-* only node w/ parent property null
-* provides interface to manage the configuration
-
+There is always one root node and it cannot be deleted, root nodes are the
+only nodes with a null parent property.  The root node is also the place
+where a module's configuration is managed.
 
 Props
 ^^^^^
