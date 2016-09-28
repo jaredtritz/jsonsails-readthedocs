@@ -13,7 +13,7 @@ creating new modules by coding them in raw HTML, JS, CSS.
 
     palette
     node_tree/index
-    edit_preview
+    dev_cycle
     saving
     ezconfig
 

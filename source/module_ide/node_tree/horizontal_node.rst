@@ -3,8 +3,8 @@
 Horizontal node
 ===============
 
-The built-in horizontal node is a container node and control layout
-positioning of the nodes inside, ensuring they are arranged horizontal. 
+The built-in horizontal node is a container node which ensures the contents are
+arranged horizontal. 
 
 See also:
 

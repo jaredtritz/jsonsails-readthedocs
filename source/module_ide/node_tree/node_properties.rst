@@ -3,6 +3,9 @@
 Node Properties
 ^^^^^^^^^^^^^^^
 
+Each of the nodes has a "Props" tab, and below are the definitions of each, and
+a table indicating which node types have which properties.
+
 Title:
   Appears in node tree and should be descritive.
 
@@ -14,9 +17,6 @@ Outer HTML tag classes:
 
 Column widths:
   Determines the columns widths in a horizontal layout.
-
-Each of the nodes has a "Props" tab, and below is a table indicating which
-node types have which properties.
 
 +------------------------+------+------+------------+----------+--------+
 | Property               |         Node type                            |

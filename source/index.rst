@@ -30,6 +30,7 @@ You may want to start here: :ref:`tutorial-beginner`
     setup/index
     module_ide/index
     scripting/index
+    rendering
     data_extraction
 
 
