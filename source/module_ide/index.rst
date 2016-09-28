@@ -11,9 +11,9 @@ creating new modules by coding them in raw HTML, JS, CSS.
     :maxdepth: 1
     :glob:
 
+    dev_cycle
     palette
     node_tree/index
-    dev_cycle
     saving
     ezconfig
 
