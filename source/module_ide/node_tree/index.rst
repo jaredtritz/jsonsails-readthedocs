@@ -3,20 +3,15 @@
 Node Tree
 ==========
 
-The node tree is located in the left pain of the IDE.  
+The node tree is located in the left pain of the IDE.  Each node is rendered 
+by itself in an anonymous function so that its code is issolated from other 
+nodes.  For internode communication you may choose to use "window" which is 
+a shared namespace. 
 
-Important points:
+.. important:: Refnodes are rendered in an iframe and so do not share the window namespace
 
-* node independence/isolation
-  the code in a node cannot interfere with the code in another node
-  unless you do so intentionally, or utilize window
-
-* rendering order of nodes (breadth first)
-  html first
-  js second
-  css applied by browser
-
-* parent/child properties
+The HTML of all the nodes is rendered breadth first from the root, then the JS is rendered the 
+same way, breadth first as well.  CSS is applied by the browser.
 
 .. toctree::
     :maxdepth: 1

@@ -4,10 +4,11 @@ Logic
 =====
 
 The logic tab is JS expected to return a boolean and it determines whether the
-node and everything under it is rendered.  
+node and everything under it is rendered. 
 
 .. code-block:: javascript
-
+  
+    // available in the logic tab namespace
     js.ufile.alias.*
 
 

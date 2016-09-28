@@ -33,3 +33,8 @@ node types have which properties.
 +------------------------+------+------+------------+----------+--------+
 
 
+See also:
+
+* :ref:`script-node-attributes` 
+
+

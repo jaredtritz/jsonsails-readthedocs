@@ -5,8 +5,8 @@ Referance Node
 
 Reference nodes, (aka refmods) allow you to import a module and render it
 inside another module.  Refmods render the module inside an iframe to provide
-issolation.  Of course, we have to avoid circular dependencies, so you cannot
-include a module as a refmod if it already contain the root module.
+issolation.  To avoid circular dependencies, so you cannot include a
+module as a refmod if it already contain the root module.
 
 
 .. note::

@@ -9,6 +9,7 @@ replaces the value in the Module JS and Module HTML contexts.
 
 .. code-block:: javascript
 
+    // available in the UFile script namespace
     js.val()            // your own value
     js.val('username')  // other value
     js.collection       // {username: value} (immutable)

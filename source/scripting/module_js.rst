@@ -19,18 +19,18 @@ authenticated user.  If only the authenticated user's own UFile is requested,
 the format remains the same but only the authenticated user id is present on
 that UFile.
 
-The following may occur if ufileX_alias is requested as an identified
-collection and ufileY_alias is requested as only the users own value.
+The following is an example where ufileX is requested under aliasX as an identified
+collection and ufileY is requested under aliasY as only the users own value:
 
 .. code-block:: json
-    
+   
     {
-      "ufileX_alias": {
+      "aliasX": {
           "real_id1": {"some-prop":7},
           "authenticated_id": {"some-prop":7},
           "real_id2": {"some-prop":7}
       },
-      "ufileY_alias":{"authenticated_id":"some_string"}
+      "aliasY":{"authenticated_id":"some_string"}
     }
 
 
@@ -45,6 +45,7 @@ server has saved the value.
 
 .. code-block:: javascript
 
+    // available in the module JS tab namespace
     js.ufile.alias.val()            // your own value
     js.ufile.alias.val('username')  // other value
     js.ufile.alias.collection       // {username: value} (immutable)
@@ -61,6 +62,7 @@ included into a module.
 
 .. code-block:: javascript
 
+    // available in the module JS tab namespace
     js.sfile.sfile_alias
     js.sfile['sfile_alias']
 
@@ -72,18 +74,21 @@ included into a module.
 
 .. code-block:: javascript
 
+    // available in the module JS tab namespace
     js.jslib.jslib_alias
     js.jslib['jslib_alias']
 
+.. _`script-node-attributes`:
 
-Node properties
+Node attributes
 ^^^^^^^^^^^^^^^
 
-Node properties can be handy to communicate between nodes, or use the node ID
-to scope a a DOM search. 
+Node attributes can be handy to communicate between nodes, or use the node ID
+to scope a DOM search. 
 
 .. code-block:: javascript
 
+    // available in the module JS tab namespace
     js.node.parent    // returns parent node (except root returns null)
     js.node.children  // returns list of child nodes 
     js.node.id        // returns node id, also given to node wrapping html tag
@@ -94,6 +99,7 @@ Re-Rendering
 
 .. code-block:: javascript
 
+    // available in the module JS tab namespace
     // this is not implemented yet 
 
 Logging
@@ -108,6 +114,7 @@ A call the logger might look something like this
 
 .. code-block:: javascript
 
+    // available in the module JS tab namespace
     // pageview: boolean (indicates to call Google analytics w/ elog information)
     // elog: json object of named params for GA & jsonsails logging 
     // json: extra json field GA doesn't handle but offers more flexiblity in jsonsails logging
