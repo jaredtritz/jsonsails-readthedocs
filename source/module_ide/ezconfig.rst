@@ -2,9 +2,12 @@
 Ez Configuration
 ================
 
+Module configuration is designed at the root node, and for a reference module
+the config GUI is exposed through the refmod node.
+
 .. note::
 
-  This interface will eventually be accessible by its own module specific url,
+  The config interface will eventually be accessible by its own module specific url,
   but for now is embedded in the main IDE interface for the module.
 
 .. _`refnode-config-script`:

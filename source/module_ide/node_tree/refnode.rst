@@ -1,11 +1,11 @@
 .. _`refnode-closed`:
 
-Referance Node
+Reference Node
 ==============
 
 Reference nodes, (aka refmods) allow you to import a module and render it
 inside another module.  Refmods are rendered inside an iframe to provide
-issolation.  To avoid circular dependencies, you cannot include a module as a
+isolation.  To avoid circular dependencies, you cannot include a module as a
 refmod if it already contain the root module.
 
 

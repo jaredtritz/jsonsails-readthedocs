@@ -3,17 +3,18 @@
 Node Properties
 ^^^^^^^^^^^^^^^
 
-Each of the nodes has a "Props" tab, and below are the definitions of each, and
-a table indicating which node types have which properties.
+Each of the nodes has a "Props" tab, and below are the definitions of each
+property, and a table indicating which node types have each property.
 
 Title:
-  Appears in node tree and should be descritive.
+  Used as label in node tree and should be descriptive.
 
 Outer HTML tag:
-  HTML tag to wrap the entire node. For example "div" will place <div>...</div> around the node.
+  HTML tag to wrap the entire node at rendering. For example "div" will place
+  <div>...</div> around the node.
 
 Outer HTML tag classes:
-  CSS classes added to the outer tag. 
+  CSS classes added to the outer tag at rendering. 
 
 Column widths:
   Determines the columns widths in a horizontal layout.

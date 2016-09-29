@@ -3,7 +3,7 @@
 Vertical Node
 =============
 
-The built-in vertical node is a container node which ensures the contents are
+The built-in vertical node is a container node which ensures its contents are
 arranged vertical. 
 
 

@@ -3,11 +3,11 @@
 Node Tree
 ==========
 
-The node tree is located in the left pain of the IDE and each node is part of
+The node tree is located in the left pane of the IDE and each node is part of
 the module. Together, when the nodes tree is rendered it produces the module.
-Each node is rendered in an anonymous function so that its code doesn't
-interfer with other nodes.  For inter-node communication you may choose to use
-"window" which is a shared namespace. 
+Each node is rendered in isolation so that its code doesn't interfere with
+other nodes.  For inter-node communication you may choose to use "window" which
+is a shared namespace. 
 
 .. important:: Refnodes are rendered in an iframe and so do not share the window namespace
 

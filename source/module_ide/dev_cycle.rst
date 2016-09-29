@@ -2,12 +2,14 @@
 Development Cycle
 =================
 
-Module development is an iterative process of editing and previewing. 
+Module development is an iterative process of editing and previewing, and
+toggling between these modes is achieved with a radio button in the IDE top
+panel. 
 
 Editing
 ^^^^^^^
 
-When a module is edited its code and configuration are modified.  In edit mode,
+When editing a module its code and/or configuration are modified.  In edit mode,
 clicking on a node in the tree will open the editor for that node, where the
 code and configuration of that node are exposed.
 
