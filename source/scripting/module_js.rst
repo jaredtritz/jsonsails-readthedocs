@@ -10,17 +10,17 @@ Any valid javascript is acceptable
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
 
-UFile values (aka UValues) for included UFiles are loaded in a consistant
+UFile values (aka UValues) for included UFiles are loaded in a consistent
 format no matter how they are requested.  If the UFile is requested as an
 identified collection, then the user id keys will be the actual authentication
-ids of the users who have values for that UFile.  If the UFile is reqeusted as
+ids of the users who have values for that UFile.  If the UFile is requested as
 an anonymous collection, then all the ids will be fake ids, except the
 authenticated user.  If only the authenticated user's own UFile is requested,
 the format remains the same but only the authenticated user id is present on
 that UFile.
 
 The following is an example where ufileX is requested under aliasX as an identified
-collection and ufileY is requested under aliasY as only the users own value:
+collection and ufileY is requested under aliasY as only the user's own value:
 
 .. code-block:: json
    
@@ -105,7 +105,7 @@ Re-Rendering
 Logging
 ^^^^^^^
 
-There is a seperate table in the database called the ELog table, for logging events, and the interface
+There is a separate table in the database called the ELog table, for logging events, and the interface
 for pushing data into that table is the same as the Google Analytics interface
 except that the JSonSails table allows for more information to be pushed, like
 the user id, and an extra json field.
@@ -117,7 +117,7 @@ A call the logger might look something like this
     // available in the module JS tab namespace
     // pageview: boolean (indicates to call Google analytics w/ elog information)
     // elog: json object of named params for GA & jsonsails logging 
-    // json: extra json field GA doesn't handle but offers more flexiblity in jsonsails logging
+    // json: extra json field GA doesn't handle but offers more flexibility in jsonsails logging
 
     var json = {};
     var question = model.get_question();
@@ -175,5 +175,8 @@ file you should do it in the JS code, and wait for the script to finish loading
 before trying to use it.  This can be abstracted into a JSLib for convenience.  
 
 
+See also:
+
+* :ref:`rendering`
 
 

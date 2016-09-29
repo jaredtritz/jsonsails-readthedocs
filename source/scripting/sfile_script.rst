@@ -5,5 +5,5 @@ SFile Script
 
 .. note::
 
-  SFile implementation unfinished!
+  SFile implementation is unfinished!
 

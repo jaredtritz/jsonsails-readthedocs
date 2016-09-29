@@ -2,7 +2,7 @@
 Quick Reference
 ===============
 
-All in one spot API syntax reference for various enviornments.
+All in one spot API syntax reference for various environments.
 
 Module HTML
 ^^^^^^^^^^^

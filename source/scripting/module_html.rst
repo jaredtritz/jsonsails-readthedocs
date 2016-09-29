@@ -21,4 +21,7 @@ script and return the object as the UFile value.
     <ufile>foo.user1.val</ufile>
 
 
+See also:
+
+* :ref:`rendering`
 
