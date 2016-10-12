@@ -20,6 +20,8 @@ The main namespaces here are
 * js.ConfigApi 
 * js.config
 
+Cursory examples of API:
+
 .. code-block:: javascript
 
     // Label 
@@ -43,6 +45,56 @@ The main namespaces here are
       "info":"<h3>Instructions</h3>",
     }
     js.ConfigApi.addPlusArea(params)    
+
+
+Deeper example for plus area
+
+.. code-block:: javascript
+
+    var initial = []
+    if(Object.prototype.toString.call(js.config.options) === "[object Array]"){
+        initial = js.config.options
+    }
+
+    var dfault = {"hi":7}
+    function validate_obj(obj){
+        //console.log('trying', JSON.stringify(obj, null, 2))
+        var ret = true
+        if(Object.prototype.toString.call(obj) !== "[object Object]"  )  
+            ret = false
+        if(!obj.hasOwnProperty('hi'))
+            ret = false
+        if(!ret)
+            alert('Problem validating: '+ JSON.stringify(obj, null, 2))
+        return ret
+    }
+    function deserialize(str){
+        try{
+            return JSON.parse(str)
+        }catch(e){
+            alert("Problem deserializing: " + str)
+            throw new Error("Something went wrong parsing JSON!");
+        }    
+    }
+
+    var params = {};
+    params.validate = function(str){ 
+        var obj = deserialize(str)
+        return validate_obj(obj)
+    }
+    params.initial = initial.map((tok)=>{ 
+        if(validate_obj(tok)){
+            return JSON.stringify(tok, null, 2)
+        }else{
+            return JSON.stringify(dfault, null, 2)
+        }
+    })
+    params.callback = function(vals){
+        js.config.options = vals.map((tok)=>{return deserialize(tok)})
+    }
+    params.info = "this is how to do it";
+
+    js.ConfigApi.addPlusArea(params)
 
 .. _`refnode-config-gui`:
 
