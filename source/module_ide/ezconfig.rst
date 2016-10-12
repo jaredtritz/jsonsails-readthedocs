@@ -35,7 +35,14 @@ The main namespaces here are
       js.config.db_name = val;
     })    
 
-
+    // Add plus area
+    var params = {
+      "initial":js.config.field_name.map((tok)=>{JSON.stringify(tok)}),
+      "validate":function(val){return val.hasOwnProperty('answer')},
+      "callback":function(val){js.config.field_name = JSON.parse(val)},
+      "info":"<h3>Instructions</h3>",
+    }
+    js.ConfigApi.addPlusArea(params)    
 
 .. _`refnode-config-gui`:
 
