@@ -43,6 +43,7 @@ Cursory examples of API:
       "validate":function(val){return val.hasOwnProperty('answer')},
       "callback":function(val){js.config.field_name = JSON.parse(val)},
       "info":"<h3>Instructions</h3>",
+      "limit":2,
     }
     js.ConfigApi.addPlusArea(params)    
 
@@ -90,6 +91,7 @@ Deeper example for plus area
         js.config.options = vals.map((tok)=>{return deserialize(tok)})
     }
     params.info = "<b>this</b> is how to do it";
+    params.limit = 1
 
     js.ConfigApi.addPlusArea(params)
 
