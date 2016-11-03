@@ -4,7 +4,13 @@
 Welcome to JSonSails.com_ docs
 ===================================
 
-You may want to start here: :ref:`tutorial-beginner`
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :caption: Quick Start Guides
+
+    video-guides
+    examples/index
 
 .. toctree::
     :maxdepth: 2
@@ -13,14 +19,6 @@ You may want to start here: :ref:`tutorial-beginner`
 
     introduction/index
     concepts/index
-
-.. toctree::
-    :maxdepth: 2
-    :glob:
-    :caption: Guides
-
-    tutorials/index
-    examples/index
 
 .. toctree::
     :maxdepth: 5
