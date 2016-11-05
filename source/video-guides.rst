@@ -60,15 +60,18 @@ Folder Management:
 User Data (UFiles):
 ^^^^^^^^^^^^^^^^^^^
 
-* js.ufiles api
+* Unique per user
+* Setup: UFile
+* Setup: Module
+* bundling / mapping
+* IDE: HTML tab
+* <ufile>alias.path.to.property</ufile> 
+* IDE: JS tab
+* js.ufiles.* (api)
 
 Javascript Libraries (JSLib):
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-
-Uploads:
-^^^^^^^^
 
 
 
