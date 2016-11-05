@@ -29,7 +29,7 @@ Search Dialogs:
 * Searches accross all users 
 * Filter on all columns
 * Column ordering
-* Opener links
+* Open links
 
 .. raw:: html
 
@@ -40,6 +40,21 @@ Search Dialogs:
 Folder Management:
 ^^^^^^^^^^^^^^^^^^
 
+* Folders-tree at left 
+* Folder-contents at right
+* Open links
+* URL sharing
+* Create new applied to active folder
+* Move contents
+* Move folder
+* Delete empty folder
+
+.. raw:: html
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fxpf9hIsCGo" frameborder="0" allowfullscreen></iframe>
+    <br/>
+    <br/>
 
 
 User Data (UFiles):
