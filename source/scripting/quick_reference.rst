@@ -20,11 +20,11 @@ Module JS
 
     js.username
     js.config
-    js.ufile.alias.val()            
-    js.ufile.alias.val('username')  
-    js.ufile.alias.collection       
-    js.ufile.alias.get()            
-    js.ufile.alias.set('new value') 
+    js.ufile.alias.val()
+    js.ufile.alias.val('username')
+    js.ufile.alias.collection
+    js.ufile.alias.get()
+    js.ufile.alias.set('new value')
     js.ufile.alias.set('new value').then( ()=>{alert('done')} )
     js.sfile.alias.???
     js.jslib.alias
@@ -33,6 +33,7 @@ Module JS
     js.node.children
     js.node.id
     js.node.title
+    js.rerender()
 
 
 Logic
@@ -60,17 +61,17 @@ UFile script
 .. code-block:: javascript
 
     js.username
-    js.val()            
-    js.val('username')  
-    js.collection       
-    js.jslib.alias      
+    js.val()
+    js.val('username')
+    js.collection
+    js.jslib.alias
     js.set = function(obj){ return obj.prop }
 
 UFile values format
 ^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: json
-    
+
     { "ufileY_alias":{"authenticated_id":"some_string"} }
 
 

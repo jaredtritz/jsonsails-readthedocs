@@ -3,7 +3,7 @@
 Module JS
 =========
 
-Any valid javascript is acceptable  
+Any valid javascript is acceptable
 
 .. _`uvalue-format`:
 
@@ -23,7 +23,7 @@ The following is an example where ufileX is requested under aliasX as an identif
 collection and ufileY is requested under aliasY as only the user's own value:
 
 .. code-block:: json
-   
+
     {
       "aliasX": {
           "real_id1": {"some-prop":7},
@@ -52,7 +52,7 @@ server has saved the value.
     js.ufile.alias.get()            // fetch own value from server
     js.ufile.alias.set('new value') // update value to server
     // set with callback
-    js.ufile.alias.set('new value').then( ()=>{alert('done')} )  
+    js.ufile.alias.set('new value').then( ()=>{alert('done')} )
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^
@@ -84,13 +84,13 @@ Node attributes
 ^^^^^^^^^^^^^^^
 
 Node attributes can be handy to communicate between nodes, or use the node ID
-to scope a DOM search. 
+to scope a DOM search.
 
 .. code-block:: javascript
 
     // available in the module JS tab namespace
     js.node.parent    // returns parent node (except root returns null)
-    js.node.children  // returns list of child nodes 
+    js.node.children  // returns list of child nodes
     js.node.id        // returns node id, also given to node wrapping html tag
     js.node.title     // node title, set from node property
 
@@ -100,7 +100,7 @@ Re-Rendering
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    // this is not implemented yet 
+    js.rerender     // immediately re-render the current module
 
 Logging
 ^^^^^^^
@@ -116,7 +116,7 @@ A call the logger might look something like this
 
     // available in the module JS tab namespace
     // pageview: boolean (indicates to call Google analytics w/ elog information)
-    // elog: json object of named params for GA & jsonsails logging 
+    // elog: json object of named params for GA & jsonsails logging
     // json: extra json field GA doesn't handle but offers more flexibility in jsonsails logging
 
     var json = {};
@@ -170,9 +170,9 @@ Loading from CDN
 ^^^^^^^^^^^^^^^^
 
 Script tags in the HTML will not load Javascript from a CDN b/c the module is
-rendered after the page has been loaded. Therefore, to load an external Javascript 
-file you should do it in the JS code, and wait for the script to finish loading 
-before trying to use it.  This can be abstracted into a JSLib for convenience.  
+rendered after the page has been loaded. Therefore, to load an external Javascript
+file you should do it in the JS code, and wait for the script to finish loading
+before trying to use it.  This can be abstracted into a JSLib for convenience.
 
 
 See also:
