@@ -106,9 +106,9 @@ Includes and Approvals:
 Reference Modules:
 ^^^^^^^^^^^^^^^^^^
 
-* Ranking module
-* Configuration GUI
+* Example: Ranking module
 * Refmod Configuration
+* Configuration API
 
 
 Javascript Libraries (JSLib):
