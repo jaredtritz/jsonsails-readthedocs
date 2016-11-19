@@ -1,3 +1,16 @@
+.. raw:: html
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+      @media screen and (max-width: 768px) {
+          iframe {
+              max-width: 100% !important;
+              width: auto !important;
+              height: auto !important;
+          }
+      }
+    </style>
+
 
 Video Tutorials
 ===============
@@ -51,7 +64,6 @@ Folder Management:
 
 .. raw:: html
 
-
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Fxpf9hIsCGo" frameborder="0" allowfullscreen></iframe>
     <br/>
     <br/>
@@ -61,29 +73,40 @@ User Data (UFiles):
 ^^^^^^^^^^^^^^^^^^^
 
 * Unique per user
-* Setup: UFile
 * Setup: Module
-* bundling / mapping
+* bundling / aliases 
 * IDE: HTML tab
 * <ufile>alias.path.to.property</ufile> 
 * IDE: JS tab
 * js.ufiles.* (api)
+* IDE: Logic tab
+* IDE: CSS tab
 
-Javascript Libraries (JSLib):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1NlMD3Khcd4" frameborder="0" allowfullscreen></iframe>
+    <br/>
+    <br/>
 
 
-
-
-Requests and Approvals:
+Includes and Approvals:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+* Setup: Included items
+* Requests page
+* Approvals page
 
 
 Reference Modules:
 ^^^^^^^^^^^^^^^^^^
 
+* Ranking module
+* Configuration GUI
+* Refmod Configuration
 
+
+Javascript Libraries (JSLib):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
