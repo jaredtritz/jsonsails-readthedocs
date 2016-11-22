@@ -106,9 +106,16 @@ Includes and Approvals:
 Reference Modules:
 ^^^^^^^^^^^^^^^^^^
 
-* Example: Ranking module
-* Refmod Configuration
+* Configurable modules
+* Consistent / Familiar UI
 * Configuration API
+* Example: Ranking module
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XajeuwXmJgA" frameborder="0" allowfullscreen></iframe>
+    <br/>
+    <br/>
 
 
 Javascript Libraries (JSLib):
