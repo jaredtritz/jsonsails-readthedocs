@@ -11,7 +11,7 @@ Used to load jquery and prototype from CDN in this example
 
 .. code-block:: javascript
 
-  return function(cdns, callback){
+  module.exports = function(cdns, callback){
       var done = 0;
       for(var i=0; i<cdns.length; i++){
           var script = document.createElement('script');
@@ -37,44 +37,42 @@ a JSLib so that the CDN method will expose the classes to the init method.
 
 .. code-block:: javascript
 
-  return function(){
-    var MyModel = Class.create();
+  var MyModel = Class.create();
 
-    // MODEL CODE
-    MyModel.prototype={
-    
-      initialize: function(param) // pass in nts model
-      {
-        this.param 
-      },
-    
-      say_hello: function(name){
-        alert('hi '+name) 
-      } 
-   
-    }
-
-    var MyView = Class.create();
-
-    // VIEW CODE
-    MyView.prototype={
-    
-      initialize: function(model) // pass in nts model
-      {
-        this.model = model 
-      },
-    
-      show_hello: function(name){
-        console.log('hi '+name) 
-      } 
-   
-    }
-    
-    var objs = {}
-    objs.Model = MyModel
-    objs.View = MyQuestion
-    return objs
+  // MODEL CODE
+  MyModel.prototype={
+  
+    initialize: function(param) // pass in nts model
+    {
+      this.param 
+    },
+  
+    say_hello: function(name){
+      alert('hi '+name) 
+    } 
+ 
   }
+
+  var MyView = Class.create();
+
+  // VIEW CODE
+  MyView.prototype={
+  
+    initialize: function(model) // pass in nts model
+    {
+      this.model = model 
+    },
+  
+    show_hello: function(name){
+      console.log('hi '+name) 
+    } 
+ 
+  }
+  
+  var objs = {}
+  objs.Model = MyModel
+  objs.View = MyQuestion
+  module.exports = objs
 
 Module JS
 ^^^^^^^^^
@@ -97,8 +95,8 @@ This is the code in the Module JS tab, which ties it all together.
       console.log('prototype', Class)
       var data = {}
       var objs = js.jslib.objs
-      MyModel = objs.MyModel(data)
-      MyView = objs.MyView() 
+      MyModel = objs.Model(data)
+      MyView = objs.View() 
       init_module([])
 
       // HTML binding    

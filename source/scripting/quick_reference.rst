@@ -65,7 +65,13 @@ UFile script
     js.val('username')
     js.collection
     js.jslib.alias
-    js.set = function(obj){ return obj.prop }
+    module.exports = {
+      load: function(var){// can return anything}
+      save: function(var){// can return anything}
+      serialize: function(var){ // must return string!}
+      deserialize: function(string){// can return anything} 
+    }
+
 
 UFile values format
 ^^^^^^^^^^^^^^^^^^^

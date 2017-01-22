@@ -15,7 +15,7 @@ Script example
 
     var obj = {}; 
     obj.say_hello = function(name){ alert('hello ' + name); }
-    return obj
+    module.exports = obj
 
 Screenshot
 ^^^^^^^^^^

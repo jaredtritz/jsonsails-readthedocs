@@ -40,8 +40,13 @@ Consists of
 
 * Script (Javascript)
 * JSLibs (JavaScript libraries)
-  
-If UFile script exists then its return value is substituted as the UFile value
-such that the actual persisted values can derive a return value in the script.
+ 
+If the ufile script does not exist then the raw value of the ufile is returned
+when the ufile value is accessed. 
+
+If UFile script does exist then module.exports must define load and save methods,
+and optionally it may also define serialize and deserialize methods. These methods
+will determine how the value is transformed when the ufile value is loaded and saved.
+
 UFile script may utilize JSLibs.
 
