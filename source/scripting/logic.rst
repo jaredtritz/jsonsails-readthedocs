@@ -9,7 +9,9 @@ node and everything under it is rendered.
 .. code-block:: javascript
   
     // available in the logic tab namespace
+    js.username
     js.ufile.alias.*
+    js.sfile.alias.*
 
 
 
