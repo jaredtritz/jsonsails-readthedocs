@@ -46,25 +46,30 @@ server has saved the value.
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    js.ufile.alias.val()            // your own value
-    js.ufile.alias.val('username')  // other value
-    js.ufile.alias.collection       // {username: value} (immutable)
-    js.ufile.alias.get()            // fetch own value from server
-    js.ufile.alias.set('new value') // update value to server
+    js.ufile.alias.value              // output from ufile script's load()
+    js.ufile.alias.raw()              // your own raw value
+    js.ufile.alias.raw('username')    // other user's raw value
+    js.ufile.alias.collection         // {username: value} (immutable)
+    js.ufile.alias.get()              // fetch collection limited by permissions
+    js.ufile.alias.set('new value')   // update value to server
     // set with callback
     js.ufile.alias.set('new value').then( ()=>{alert('done')} )
+
+
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^
 
-The following are both valid methods of accessing a SFile which has been
+The following are valid methods of an SFile which has been
 included into a module.
 
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    js.sfile.sfile_alias
-    js.sfile['sfile_alias']
+    
+    js.sfile.alias.post(value)          // immediately send the value to the server
+    js.sfile.alias.onUpdate(callback)   // register a function to handle server pushed values
+    js.sfile.alias.value                // current value from client cache
 
 Access to JSLibs
 ^^^^^^^^^^^^^^^^

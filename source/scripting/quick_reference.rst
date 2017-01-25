@@ -20,13 +20,16 @@ Module JS
 
     js.username
     js.config
-    js.ufile.alias.val()
-    js.ufile.alias.val('username')
+    js.ufile.alias.value
+    js.ufile.alias.raw()
+    js.ufile.alias.raw('username')
     js.ufile.alias.collection
     js.ufile.alias.get()
     js.ufile.alias.set('new value')
     js.ufile.alias.set('new value').then( ()=>{alert('done')} )
-    js.sfile.alias.???
+    js.sfile.alias.post(value)       
+    js.sfile.alias.onUpdate(callback)
+    js.sfile.alias.value             
     js.jslib.alias
     js.logger.logEvent(pageview, elog, json)
     js.node.parent
@@ -61,16 +64,24 @@ UFile script
 .. code-block:: javascript
 
     js.username
-    js.val()
-    js.val('username')
-    js.collection
     js.jslib.alias
     module.exports = {
-      load: function(var){// can return anything}
-      save: function(var){// can return anything}
-      serialize: function(var){ // must return string!}
-      deserialize: function(string){// can return anything} 
+      load: function(myval, collection) {// can return anything}
+      save: function(newval)            {// can return anything}
+      serialize: function(myval)        {// must return string!}
+      deserialize: function(string)     {// can return anything}
     }
+
+SFile script
+^^^^^^^^^^^^
+
+.. code-block:: javascript
+
+    js.username
+    module.exports = {
+      save: function(state, input)    {// must return string!}
+      load: function(var next_state)  {// can return anything}
+    } 
 
 
 UFile values format
