@@ -28,7 +28,7 @@ Module JS
     js.ufile.alias.set('new value')
     js.ufile.alias.set('new value').then( ()=>{alert('done')} )
     js.sfile.alias.post(value)       
-    js.sfile.alias.onUpdate(callback)
+    js.sfile.alias.onUpdate(function(new_val){//callback code})
     js.sfile.alias.value             
     js.jslib.alias
     js.logger.logEvent(pageview, elog, json)

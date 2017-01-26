@@ -68,8 +68,10 @@ included into a module.
     // available in the module JS tab namespace
     
     js.sfile.alias.post(value)          // immediately send the value to the server
-    js.sfile.alias.onUpdate(callback)   // register a function to handle server pushed values
     js.sfile.alias.value                // current value from client cache
+
+    // register a function to handle server pushed values
+    js.sfile.alias.onUpdate(function(new_val){//callback code})   
 
 Access to JSLibs
 ^^^^^^^^^^^^^^^^
