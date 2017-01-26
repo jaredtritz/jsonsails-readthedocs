@@ -11,6 +11,13 @@ value per user in the form of any primitive Javascript data type or JSON data.
   Programmers can think of UFiles as loosely typed, infinite session, user
   variables, which are loaded into the scope of the module code.
 
+
+Here is a diagram outlining the way UFiles are marshaled in use.
+
+.. image:: ../../source/images/ufile_marshaling.png
+    :width: 80%
+
+
 Writing to UFiles
 ^^^^^^^^^^^^^^^^^
 
