@@ -16,4 +16,6 @@ See also:
 * :ref:`ufile-writing-permission`
 * :ref:`ufile-reading-permission`
 * :ref:`script-ufiles`
+* :ref:`data-management-import`
+* :ref:`data-management-export`
 

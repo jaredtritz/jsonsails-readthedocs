@@ -29,6 +29,6 @@ Welcome to JSonSails.com_ docs
     module_ide/index
     scripting/index
     rendering
-    data_extraction
+    data_management/index
 
 
