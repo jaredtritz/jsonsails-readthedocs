@@ -50,7 +50,7 @@ Logic
 Config Script
 ^^^^^^^^^^^^^
 
-.. code-block:: json
+.. code-block:: javascript
 
     js.config
     js.ConfigApi.addLabel("label")
