@@ -31,4 +31,11 @@ Welcome to JSonSails.com_ docs
     rendering
     data_management/index
 
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    :caption: API Refererence
+
+    api_docs/index
+
 
