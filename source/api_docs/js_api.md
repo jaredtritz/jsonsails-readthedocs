@@ -1,109 +1,184 @@
+<a name="JsApi"></a>
+
 ## JsApi
 The API on the global `js` object in the module scripting environment.
 
 **Kind**: global class  
 
-* [JsApi](#markdown-header-jsapi)
-    * [.config](#markdown-header-jsconfig)
-    * [.jslib](#markdown-header-jsjslib)
-    * [.logger](#markdown-header-jslogger)
-    * [.module](#markdown-header-jsmodule)
-    * [.node](#markdown-header-jsnode)
-    * [.sfile](#markdown-header-jssfile)
-    * [.ufile](#markdown-header-jsufile)
-    * [.username](#markdown-header-jsusername)
-    * [.rerender()](#markdown-header-jsrerender)
+* [JsApi](#JsApi)
+    * [.config](#JsApi+config)
+    * [.jslib](#JsApi+jslib)
+    * [.logger](#JsApi+logger)
+    * [.module](#JsApi+module)
+    * [.node](#JsApi+node)
+    * [.sfile](#JsApi+sfile)
+    * [.ufile](#JsApi+ufile)
+    * [.username](#JsApi+username)
+    * [.rerender()](#JsApi+rerender)
+
+<a name="JsApi+config"></a>
 
 ### js.config
 The currently rendered module's config object
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `object` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>object</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+jslib"></a>
 
 ### js.jslib
 Dictionary of alias to jslib
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `Object.<alias, *>` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>Object.&lt;alias, *&gt;</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+logger"></a>
 
 ### js.logger
 Current logger
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `object` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>object</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+module"></a>
 
 ### js.module
 Current [module](module_api.md) object.
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `ModuleApi` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>ModuleApi</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+node"></a>
 
 ### js.node
 Current [node](node_api.md) object, set for each node begin evaluated.
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `NodeApi` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>NodeApi</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+sfile"></a>
 
 ### js.sfile
 Dictionary of alias to [sfile](sfile_api.md)
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `Object.<alias, SfileApi>` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>Object.&lt;alias, SfileApi&gt;</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+ufile"></a>
 
 ### js.ufile
 Dictionary of alias to [ufile](ufile_api.md)
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `Object.<alias, UfileApi>` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>Object.&lt;alias, UfileApi&gt;</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+username"></a>
 
 ### js.username
 The current user's username
 
-**Kind**: instance property of <[JsApi](#JsApi)>
-  
+**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**
 
-| Type |
-| --- |
-| `string` | 
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>string</code></td>
+    </tr>  </tbody>
+</table>
+
+<a name="JsApi+rerender"></a>
 
 ### js.rerender()
 Rerender this module and its children
 
-**Kind**: instance method of <[JsApi](#JsApi)>
-  
+**Kind**: instance method of <code>[JsApi](#JsApi)</code>  
