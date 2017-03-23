@@ -13,6 +13,4 @@ Scripting Environments
     ufile_script
     sfile_script
     jslib_script
-    api_reference
-    ../api_docs/js_api
 
