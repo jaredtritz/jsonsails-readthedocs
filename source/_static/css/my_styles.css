@@ -6,7 +6,7 @@ td p { /* fix for <p> in table not lining up */
 }
 
 td, th {
-  padding: 3px 5px; /* so that code tags don't overlap borders */
+  padding: 2px 5px 4px 5px; /* so that code tags don't overlap borders */
 }
 
 th {
