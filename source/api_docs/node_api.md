@@ -11,7 +11,7 @@ Interface to node objects. The current node object is accessed from `js.node`
     * [.id](#NodeApi+id)
     * [.parent](#NodeApi+parent)
     * [.title](#NodeApi+title)
-    * [.call(method, params, onSuccess, onError)](#NodeApi+call)
+    * [.call(method, params)](#NodeApi+call) ⇒ <code>Promise</code>
     * [.evaluateLogic()](#NodeApi+evaluateLogic) ⇒ <code>boolean</code>
     * [.onReady(js)](#NodeApi+onReady)
     * [.render()](#NodeApi+render) ⇒ <code>[NodeApi](#NodeApi)</code>
@@ -119,10 +119,11 @@ Title of this node
 
 <a name="NodeApi+call"></a>
 
-### js.node.call(method, params, onSuccess, onError)
+### js.node.call(method, params) ⇒ <code>Promise</code>
 Only works on ReferenceNodes. Initiate an async call to the module
 behind the refnode. The method being called needs to be bound first on
-the receiving module using `js.module.bind()`.
+the receiving module using `js.module.bind()`. Returns a Promise which
+will be resolved with the method's return value.
 
 **Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <table>
@@ -137,12 +138,6 @@ the receiving module using `js.module.bind()`.
 </td>
     </tr><tr>
     <td>params</td><td><code>*</code></td><td><p>parameters for the method</p>
-</td>
-    </tr><tr>
-    <td>onSuccess</td><td><code>function</code></td><td><p>success callback</p>
-</td>
-    </tr><tr>
-    <td>onError</td><td><code>function</code></td><td><p>failure callback</p>
 </td>
     </tr>  </tbody>
 </table>
