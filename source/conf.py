@@ -141,7 +141,11 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_style = 'css/my_styles.css'     # Choosing my custom theme.
+#html_style = 'css/my_styles.css'     # Choosing my custom theme. Doesn't seem to work on RTD.
+
+# Try another way of adding css for ReadTheDocs
+def setup(app):
+    app.add_stylesheet('css/my_styles.css')
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
