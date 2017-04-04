@@ -1,0 +1,29 @@
+/* Include original theme */
+@import url("theme.css");
+
+/*
+table, th, td {
+   border: 1px solid black;
+}*/
+
+td p { /* fix for <p> in table not lining up */
+  margin-bottom: 1px;
+  line-height: normal;
+}
+
+td, th {
+  padding: 3px 5px; /* so that code tags don't overlap borders */
+}
+
+th {
+  text-align: left;
+  background-color: #555;
+  color: #f1f2ea;
+}
+
+tr:nth-child(odd) td{background-color: #d9dbd9}
+tr:nth-child(even) td{background-color: #f1f2ea}
+
+.rst-content td code {
+  padding: 2px 5px 0px 5px;
+}
