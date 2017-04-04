@@ -1,10 +1,4 @@
-/* Include original theme */
-/*@import url("theme.css");*/
-
-/*
-table, th, td {
-   border: 1px solid black;
-}*/
+/* Improve table styling on Read The Docs */
 
 td p { /* fix for <p> in table not lining up */
   margin-bottom: 1px;
@@ -24,6 +18,7 @@ th {
 tr:nth-child(odd) td{background-color: #d9dbd9}
 tr:nth-child(even) td{background-color: #f1f2ea}
 
+/* Reduce bottom padding of code elements in tables */
 .rst-content td code {
   padding: 2px 5px 0px 5px;
 }
