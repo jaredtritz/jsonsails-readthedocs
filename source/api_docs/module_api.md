@@ -99,20 +99,25 @@ The title of this module.
 <a name="ModuleApi+bind_method"></a>
 
 ### js.module.bind_method(method_name, callback)
-Method to bind a function for reference node calls.
+Bind a function as a method with the given name on reference nodes
+which represent this module. The provided callback function may return a
+value, or a Promise.
 
 **Kind**: instance method of <code>[ModuleApi](#ModuleApi)</code>  
 <table>
   <thead>
     <tr>
-      <th>Param</th><th>Type</th>
+      <th>Param</th><th>Type</th><th>Description</th>
     </tr>
   </thead>
   <tbody>
 <tr>
-    <td>method_name</td><td><code>string</code></td>
+    <td>method_name</td><td><code>string</code></td><td><p>name to pass to
+   <a href="node_api.html#NodeApi+call">NodeApi.call</a></p>
+</td>
     </tr><tr>
-    <td>callback</td><td><code>function</code></td>
+    <td>callback</td><td><code>function</code></td><td><p>take parameters and return value or Promise.</p>
+</td>
     </tr>  </tbody>
 </table>
 

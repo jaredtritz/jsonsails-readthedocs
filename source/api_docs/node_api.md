@@ -11,7 +11,7 @@ Interface to node objects. The current node object is accessed from `js.node`
     * [.id](#NodeApi+id)
     * [.parent](#NodeApi+parent)
     * [.title](#NodeApi+title)
-    * [.call(method, params)](#NodeApi+call) ⇒ <code>Promise</code>
+    * [.call(method, params)](#NodeApi+call) ⇒ <code>promise</code>
     * [.evaluateLogic()](#NodeApi+evaluateLogic) ⇒ <code>boolean</code>
     * [.onReady(js)](#NodeApi+onReady)
     * [.render()](#NodeApi+render) ⇒ <code>[NodeApi](#NodeApi)</code>
@@ -119,7 +119,7 @@ Title of this node
 
 <a name="NodeApi+call"></a>
 
-### js.node.call(method, params) ⇒ <code>Promise</code>
+### js.node.call(method, params) ⇒ <code>promise</code>
 Only works on ReferenceNodes. Initiate an async call to the module
 behind the refnode. The method being called needs to be bound first on
 the receiving module using `js.module.bind()`. Returns a Promise which
@@ -153,7 +153,7 @@ Run the logic script on this node.
 ### js.node.onReady(js)
 Function that will get called when all descendants of this node have been
 rendered. Set this to a custom function, but remember that the first
-parameter is the [jsapi](js_api.md) interface.
+parameter is the [JsApi](js_api.html) interface.
 
 **Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <table>
@@ -164,7 +164,7 @@ parameter is the [jsapi](js_api.md) interface.
   </thead>
   <tbody>
 <tr>
-    <td>js</td><td><code>JsApi</code></td><td><p>The <a href="js_api.md">jsapi</a> interface object</p>
+    <td>js</td><td><code>JsApi</code></td><td><p>The <a href="js_api.html">JsApi</a> interface object</p>
 </td>
     </tr>  </tbody>
 </table>
