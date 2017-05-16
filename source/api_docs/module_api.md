@@ -8,7 +8,6 @@ Interface to module object. The current module object is accessed from
 
 * [ModuleApi](#ModuleApi)
     * [.children](#ModuleApi+children)
-    * [.config](#ModuleApi+config)
     * [.root](#ModuleApi+root)
     * [.title](#ModuleApi+title)
     * [.bind_method(method_name, callback)](#ModuleApi+bind_method)
@@ -33,26 +32,6 @@ anywhere in the module.
   <tbody>
 <tr>
     <td><code>array.&lt;NodeApi&gt;</code></td>
-    </tr>  </tbody>
-</table>
-
-<a name="ModuleApi+config"></a>
-
-### js.module.config
-The currently rendered module's config object
-
-**Kind**: instance property of <code>[ModuleApi](#ModuleApi)</code>  
-**Properties**
-
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td><code>object</code></td>
     </tr>  </tbody>
 </table>
 

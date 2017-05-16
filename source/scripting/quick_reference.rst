@@ -16,6 +16,14 @@ Module HTML
 Module JS
 ^^^^^^^^^
 
+link to doc
+
+* :doc:`../api_docs/ufile_api`
+
+link to text within doc
+
+* :ref:`link to text in doc <test-jared-ref>`
+
 .. code-block:: javascript
 
     js.username

@@ -7,6 +7,7 @@ Ufile. The ClientBundle has the serialized value.
 **Kind**: global class  
 
 * [UFileAPI](#UFileAPI)
+    * [.collection](#UFileAPI.UFileWrapper+collection)
     * [.value](#UFileAPI+value)
     * [.raw(username)](#UFileAPI+raw) ⇒ <code>\*</code>
     * [.get()](#UFileAPI+get) ⇒ <code>promise</code>
@@ -14,6 +15,29 @@ Ufile. The ClientBundle has the serialized value.
     * [.loadValues()](#UFileAPI+loadValues)
     * [.evaluateScript()](#UFileAPI+evaluateScript)
     * [.updateCachedValue(val)](#UFileAPI+updateCachedValue) ⇒ <code>string</code>
+
+<a name="UFileAPI.UFileWrapper+collection"></a>
+
+### ufile.collection
+```eval_rst
+.. _test-jared-ref:
+```
+Collection of all values for any users having value of the UFile
+
+**Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
+**Properties**
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>object</code></td>
+    </tr>  </tbody>
+</table>
 
 <a name="UFileAPI+value"></a>
 

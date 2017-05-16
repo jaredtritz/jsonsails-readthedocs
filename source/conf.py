@@ -16,6 +16,7 @@
 import sys
 import os
 import shlex
+from recommonmark.transform import AutoStructify
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -142,8 +143,15 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']  # added static for css
 
 # This way works for ReadTheDocs, to improve table styles
+github_doc_root = ''
 def setup(app):
     app.add_stylesheet('css/my_styles.css')
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            'enable_eval_rst': True
+            }, True)
+    app.add_transform(AutoStructify)
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
