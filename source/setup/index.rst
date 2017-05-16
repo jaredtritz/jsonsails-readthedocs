@@ -22,7 +22,9 @@ It is also where you can pass the ownership of the object.
 
     modules
     ufiles
+    uinterfaces
     sfiles
+    sinterfaces
     jslibs
     refmods
 
