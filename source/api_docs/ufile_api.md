@@ -9,7 +9,7 @@ Ufile. The ClientBundle has the serialized value.
 * [UFileAPI](#UFileAPI)
     * [.value](#UFileAPI+value)
     * [.raw(username)](#UFileAPI+raw) ⇒ <code>\*</code>
-    * [.get()](#UFileAPI+get) ⇒ <code>Promise</code>
+    * [.get()](#UFileAPI+get) ⇒ <code>promise</code>
     * [.set(val)](#UFileAPI+set) ⇒ <code>Promise</code>
     * [.loadValues()](#UFileAPI+loadValues)
     * [.evaluateScript()](#UFileAPI+evaluateScript)
@@ -54,7 +54,7 @@ output from ufile script load method.
 
 <a name="UFileAPI+get"></a>
 
-### ufile.get() ⇒ <code>Promise</code>
+### ufile.get() ⇒ <code>promise</code>
 Initiates an async request for the collection values of this ufile, and
 returns a Promise. This method is buffered so that calls in quick
 succession will be combined into a single request.

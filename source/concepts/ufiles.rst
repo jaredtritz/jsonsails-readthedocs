@@ -45,15 +45,8 @@ See also
 Consists of
 ^^^^^^^^^^^
 
-* Script (Javascript)
-* JSLibs (JavaScript libraries)
+* UInterface (Javascript)
  
-If the ufile script does not exist then the raw value of the ufile is returned
+If the UFile does not have a UInterface script then the raw value of the ufile is returned
 when the ufile value is accessed. 
-
-If UFile script does exist then module.exports must define load and save methods,
-and optionally it may also define serialize and deserialize methods. These methods
-will determine how the value is transformed when the ufile value is loaded and saved.
-
-UFile script may utilize JSLibs.
 

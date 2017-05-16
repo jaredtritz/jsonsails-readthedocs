@@ -20,9 +20,8 @@ Here is a diagram outlining the way SFiles are marshaled in use.
 Writing to SFiles
 """""""""""""""""
 
-Writing to SFiles is done server side through an interface implemented in the
-script.  Thus, the server can make sure the writing is synchronized among users.
-The script is written and managed by the owner of the SFile. 
+Writing to SFiles is done server side via the SInterface.  Thus, the server can
+make sure the writing is synchronized among users.  
 
 Reading from SFiles
 """""""""""""""""""
@@ -33,7 +32,6 @@ is pushed.
 Consists of
 """""""""""
 
-* Script (Javascript)
-* JSLibs (JavaScript libraries)
+* SInterface
  
 
