@@ -11,7 +11,9 @@ key concepts in more detail.
 
     modules 
     ufiles
+    uinterfaces
     sfiles
+    sinterfaces
     jslibs 
     refmods
     uploads 
