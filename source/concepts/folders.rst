@@ -8,7 +8,9 @@ Items in folders
 
 * Modules
 * UFiles
+* UInterfaces
 * SFiles
+* SInterfaces
 * JSLibs
 * Uploads 
 

@@ -14,7 +14,9 @@ module, the owner of the resource must grant permission before it will
 be loaded as part of the module bundle. 
 
 * UFiles
+* UInterfaces
 * SFiles
+* SInterfaces
 * JSLibs
 * Modules
 
