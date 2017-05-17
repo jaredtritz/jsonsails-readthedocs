@@ -22,7 +22,17 @@ Ufile. The ClientBundle has the serialized value.
 ```eval_rst
 .. _test-jared-ref:
 ```
-Collection of all values for any users having value of the UFile
+Collection of all values for any users having value of the UFile.
+
+Values format:
+<!-- ufile-collection-format -->
+
+    {
+      "real_id1": {"some-prop":7},
+      "authenticated_id": {"some-prop":7},
+      "real_id2": {"some-prop":7}
+    }
+<!-- end-label -->
 
 **Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
 **Properties**

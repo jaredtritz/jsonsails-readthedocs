@@ -33,6 +33,10 @@ collection and ufileY is requested under aliasY as only the user's own value:
       "aliasY":{"authenticated_id":"some_string"}
     }
 
+.. literalinclude:: ../api_docs/ufile_api.md
+    :language: json
+    :start-after: ufile-collection-format -->
+    :end-before: <!-- end
 
 .. _`ufile-writing-modulejs`:
 
@@ -66,12 +70,12 @@ included into a module.
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    
+
     js.sfile.alias.post(value)          // immediately send the value to the server
     js.sfile.alias.value                // current value from client cache
 
     // register a function to handle server pushed values
-    js.sfile.alias.onUpdate(function(new_val){//callback code})   
+    js.sfile.alias.onUpdate(function(new_val){//callback code})
 
 Access to JSLibs
 ^^^^^^^^^^^^^^^^
