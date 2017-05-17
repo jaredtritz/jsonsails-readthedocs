@@ -147,23 +147,23 @@ A call the logger might look something like this
 +----------+--------------------------+--------------------+
 | Column   | Type                     |   Source           |
 +==========+==========================+====================+
-+ id       | integer                  |   automatic        |
+| id       | integer                  |   automatic        |
 +----------+--------------------------+--------------------+
 | mwhen    | timestamp with time zone |   automatic        |
 +----------+--------------------------+--------------------+
-+ url      | text                     |   automatic        |
+| url      | text                     |   automatic        |
 +----------+--------------------------+--------------------+
 | category | text                     |   elog => GA       |
 +----------+--------------------------+--------------------+
-+ action   | text                     |   elog => GA       |
+| action   | text                     |   elog => GA       |
 +----------+--------------------------+--------------------+
 | label    | text                     |   elog => GA       |
 +----------+--------------------------+--------------------+
-+ value    | integer                  |   elog => GA       |
+| value    | integer                  |   elog => GA       |
 +----------+--------------------------+--------------------+
 | json     | text                     |   json             |
 +----------+--------------------------+--------------------+
-+ who      | character varying(30)    |   automatic        |
+| who      | character varying(30)    |   automatic        |
 +----------+--------------------------+--------------------+
 
 The GA logging has the benefit of providing many useful views of the resource

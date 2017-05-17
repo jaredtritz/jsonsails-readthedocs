@@ -4,6 +4,25 @@ Quick Reference
 
 All in one spot API syntax reference for various environments.
 
+
+Example links & includes
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+doc links:
+
+:doc:`../api_docs/ufile_api`
+
+:doc:`rename the link </../api_docs/ufile_api>`
+
+within doc links:
+
+:ref:`js.username <test-jared-ref>`
+
+Code snippet from another file:
+
+.. literalinclude:: ../../../ezbuilder/src/javascript/docgen/test.rst
+    :language: javascript
+
 Module HTML
 ^^^^^^^^^^^
 
@@ -15,14 +34,6 @@ Module HTML
 
 Module JS
 ^^^^^^^^^
-
-link to doc
-
-* :doc:`../api_docs/ufile_api`
-
-link to text within doc
-
-* :ref:`link to text in doc <test-jared-ref>`
 
 .. code-block:: javascript
 
