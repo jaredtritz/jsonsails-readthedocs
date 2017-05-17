@@ -18,11 +18,6 @@ within doc links:
 
 :ref:`js.username <test-jared-ref>`
 
-Code snippet from another file:
-
-.. literalinclude:: ../../../ezbuilder/src/javascript/docgen/test.rst
-    :language: javascript
-
 Module HTML
 ^^^^^^^^^^^
 
