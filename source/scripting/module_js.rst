@@ -5,36 +5,16 @@ Module JS
 
 Any valid javascript is acceptable
 
+.. _`ufile-writing-modulejs`:
 .. _`uvalue-format`:
 
-UFile values format
-^^^^^^^^^^^^^^^^^^^
+Access to UFiles & UValues
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-UFile values (aka UValues) for included UFiles are loaded in a consistent
-format no matter how they are requested.  If the UFile is requested as an
-identified collection, then the user id keys will be the actual authentication
-ids of the users who have values for that UFile.  If the UFile is requested as
-an anonymous collection, then all the ids will be fake ids, except the
-authenticated user.  If only the authenticated user's own UFile is requested,
-the format remains the same but only the authenticated user id is present on
-that UFile.
-
-The following is an example where ufileX is requested under aliasX as an identified
-collection and ufileY is requested under aliasY as only the user's own value:
-
-.. literalinclude:: ../api_docs/ufile_api.md
-    :language: json
-    :start-after: ufile-collection-format -->
-    :end-before: <!-- end
-
-.. _`ufile-writing-modulejs`:
-
-Access to UFiles
-^^^^^^^^^^^^^^^^
-
-The following are valid methods of reading/writing UFiles which have been
-included into a module.  The callback promise can be used to respond once the
-server has saved the value.
+.. code-block:: javascript
+    
+    // from the Module JS
+    js.ufile.alias.[api method]
 
 :doc:`UFile API</../api_docs/ufile_api>`
 

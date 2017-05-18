@@ -40,8 +40,8 @@ aggregates all requested for objects owned by the authenticated user.
 
 .. _`ufile-writing-permission`:
 
-UFile Writing
-^^^^^^^^^^^^^
+UFile (UValue) Writing
+^^^^^^^^^^^^^^^^^^^^^^
 
 UFiles permission levels for writing are set by the owner to have one of these
 two values:
@@ -55,8 +55,8 @@ hand, you often want users to be able to set their own value.
 
 .. _`ufile-reading-permission`:
 
-UFile Reading
-^^^^^^^^^^^^^
+UFile (UValue) Reading
+^^^^^^^^^^^^^^^^^^^^^^
 
 UFiles permission levels for reading are set by the owner to have one of these
 three values:
@@ -67,6 +67,14 @@ three values:
 
 As long as the read request level is equal or below the max permission level
 set by the owner, then the request will be honored. 
+
+UFile values (aka UValues) are loaded in a consistent format no matter how they
+are requested.  If the UFile is requested as an identified collection, then the
+user id keys will be the actual authentication ids of the users who have values
+for that UFile.  If the UFile is requested as an anonymous collection, then all
+the ids will be fake ids, except the authenticated user.  If only the
+authenticated user's own UFile is requested, the format remains the same but
+only the authenticated user id is present on that UFile collection.
 
 .. note:: 
 

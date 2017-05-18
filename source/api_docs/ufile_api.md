@@ -25,9 +25,9 @@ Values format:
 <!-- ufile-collection-format -->
 
     {
-      "real_id1": {"some-prop":7},
+      "fake_id1": {"some-prop":6},
       "authenticated_id": {"some-prop":7},
-      "real_id2": {"some-prop":7}
+      "fake_id2": {"some-prop":1}
     }
 <!-- end-label -->
 
@@ -70,9 +70,9 @@ quick succession will be combined into a single request.
 <a name="UFileAPI+set"></a>
 
 ### ufile.set(val) ⇒ <code>Promise</code>
-Initiates an async request to update the server's value for this ufile.
-This method is buffered so that calls in quick
-succession will be combined into a single request.
+Initiates an async request to update the users value on the server for
+this ufile.  This method is buffered so that calls in quick succession
+will be combined into a single request.
 
 **Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
 **Returns**: <code>Promise</code> - <!-- ufile-set-example -->
