@@ -22,3 +22,7 @@ tr:nth-child(even) td{background-color: #f1f2ea}
 .rst-content td code {
   padding: 2px 5px 0px 5px;
 }
+
+table {
+  margin-bottom: 24px;
+}
