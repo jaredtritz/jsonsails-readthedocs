@@ -3,7 +3,6 @@
 ## NodeApi
 Interface to node objects. The current node object is accessed from `js.node`
 
-**Kind**: global class  
 
 * [NodeApi](#NodeApi)
     * [.children](#NodeApi+children)
@@ -20,11 +19,6 @@ Interface to node objects. The current node object is accessed from `js.node`
 <a name="NodeApi+children"></a>
 
 ### js.node.children
-Array of child nodes once children have been rendered
-
-**Kind**: instance property of <code>[NodeApi](#NodeApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -37,14 +31,11 @@ Array of child nodes once children have been rendered
     </tr>  </tbody>
 </table>
 
+Array of child nodes once children have been rendered
+
 <a name="NodeApi+dom"></a>
 
 ### js.node.dom
-DOM element of this node's rendered HTML
-
-**Kind**: instance property of <code>[NodeApi](#NodeApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -57,14 +48,11 @@ DOM element of this node's rendered HTML
     </tr>  </tbody>
 </table>
 
+DOM element of this node's rendered HTML
+
 <a name="NodeApi+id"></a>
 
 ### js.node.id
-ID of this node
-
-**Kind**: instance property of <code>[NodeApi](#NodeApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -77,14 +65,11 @@ ID of this node
     </tr>  </tbody>
 </table>
 
+ID of this node
+
 <a name="NodeApi+parent"></a>
 
 ### js.node.parent
-parent of this node
-
-**Kind**: instance property of <code>[NodeApi](#NodeApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -97,14 +82,11 @@ parent of this node
     </tr>  </tbody>
 </table>
 
+parent of this node
+
 <a name="NodeApi+title"></a>
 
 ### js.node.title
-Title of this node
-
-**Kind**: instance property of <code>[NodeApi](#NodeApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -117,6 +99,8 @@ Title of this node
     </tr>  </tbody>
 </table>
 
+Title of this node
+
 <a name="NodeApi+call"></a>
 
 ### js.node.call(method, params) ⇒ <code>promise</code>
@@ -125,7 +109,6 @@ behind the refnode. The method being called needs to be bound first on
 the receiving module using `js.module.bind()`. Returns a Promise which
 will be resolved with the method's return value.
 
-**Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <table>
   <thead>
     <tr>
@@ -147,7 +130,6 @@ will be resolved with the method's return value.
 ### js.node.evaluateLogic() ⇒ <code>boolean</code>
 Run the logic script on this node.
 
-**Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <a name="NodeApi+onReady"></a>
 
 ### js.node.onReady(js)
@@ -155,7 +137,6 @@ Function that will get called when all descendants of this node have been
 rendered. Set this to a custom function, but remember that the first
 parameter is the [JsApi](js_api.html) interface.
 
-**Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <table>
   <thead>
     <tr>
@@ -174,13 +155,11 @@ parameter is the [JsApi](js_api.html) interface.
 ### js.node.render() ⇒ <code>[NodeApi](#NodeApi)</code>
 Method to render DOM of this node
 
-**Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <a name="NodeApi+renderChildren"></a>
 
 ### js.node.renderChildren(children)
 Override this method to customize how children are rendered
 
-**Kind**: instance method of <code>[NodeApi](#NodeApi)</code>  
 <table>
   <thead>
     <tr>

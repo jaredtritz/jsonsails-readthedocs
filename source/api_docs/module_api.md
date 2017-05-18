@@ -4,7 +4,6 @@
 Interface to module object. The current module object is accessed from
 `js.module`.
 
-**Kind**: global class  
 
 * [ModuleApi](#ModuleApi)
     * [.children](#ModuleApi+children)
@@ -16,13 +15,6 @@ Interface to module object. The current module object is accessed from
 <a name="ModuleApi+children"></a>
 
 ### js.module.children
-External child nodes which have been attached to the reference node
-which is representing this module. These may be rendered and attached
-anywhere in the module.
-
-**Kind**: instance property of <code>[ModuleApi](#ModuleApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -35,14 +27,13 @@ anywhere in the module.
     </tr>  </tbody>
 </table>
 
+External child nodes which have been attached to the reference node
+which is representing this module. These may be rendered and attached
+anywhere in the module.
+
 <a name="ModuleApi+root"></a>
 
 ### js.module.root
-Root node object of this module.
-
-**Kind**: instance property of <code>[ModuleApi](#ModuleApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -55,14 +46,11 @@ Root node object of this module.
     </tr>  </tbody>
 </table>
 
+Root node object of this module.
+
 <a name="ModuleApi+title"></a>
 
 ### js.module.title
-The title of this module.
-
-**Kind**: instance property of <code>[ModuleApi](#ModuleApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -75,6 +63,8 @@ The title of this module.
     </tr>  </tbody>
 </table>
 
+The title of this module.
+
 <a name="ModuleApi+bind_method"></a>
 
 ### js.module.bind_method(method_name, callback)
@@ -82,7 +72,6 @@ Bind a function as a method with the given name on reference nodes
 which represent this module. The provided callback function may return a
 value, or a Promise.
 
-**Kind**: instance method of <code>[ModuleApi](#ModuleApi)</code>  
 <table>
   <thead>
     <tr>
@@ -105,7 +94,6 @@ value, or a Promise.
 ### js.module.ready(callback)
 Bind a function to be executed when the module finishes rendering
 
-**Kind**: instance method of <code>[ModuleApi](#ModuleApi)</code>  
 <table>
   <thead>
     <tr>

@@ -3,7 +3,6 @@
 ## JsApi
 The API on the global `js` object in the module scripting environment.
 
-**Kind**: global class  
 
 * [JsApi](#JsApi)
     * [.config](#JsApi+config)
@@ -19,11 +18,6 @@ The API on the global `js` object in the module scripting environment.
 <a name="JsApi+config"></a>
 
 ### js.config
-The currently rendered module's config object
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -36,14 +30,11 @@ The currently rendered module's config object
     </tr>  </tbody>
 </table>
 
+The currently rendered module's config object
+
 <a name="JsApi+jslib"></a>
 
 ### js.jslib
-Dictionary of alias to jslib
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -56,14 +47,11 @@ Dictionary of alias to jslib
     </tr>  </tbody>
 </table>
 
+Dictionary of alias to jslib
+
 <a name="JsApi+module"></a>
 
 ### js.module
-Current [module](module_api.md) object.
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -76,14 +64,11 @@ Current [module](module_api.md) object.
     </tr>  </tbody>
 </table>
 
+Current [module](module_api.md) object.
+
 <a name="JsApi+node"></a>
 
 ### js.node
-Current [node](node_api.md) object, set for each node begin evaluated.
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -96,14 +81,11 @@ Current [node](node_api.md) object, set for each node begin evaluated.
     </tr>  </tbody>
 </table>
 
+Current [node](node_api.md) object, set for each node begin evaluated.
+
 <a name="JsApi+sfile"></a>
 
 ### js.sfile
-Dictionary of alias to [sfile](sfile_api.md)
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -116,14 +98,11 @@ Dictionary of alias to [sfile](sfile_api.md)
     </tr>  </tbody>
 </table>
 
+Dictionary of alias to [sfile](sfile_api.md)
+
 <a name="JsApi+ufile"></a>
 
 ### js.ufile
-Dictionary of alias to [ufile](ufile_api.md)
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -136,14 +115,11 @@ Dictionary of alias to [ufile](ufile_api.md)
     </tr>  </tbody>
 </table>
 
+Dictionary of alias to [ufile](ufile_api.md)
+
 <a name="JsApi+username"></a>
 
 ### js.username
-The current user's username. Available in UFile, SFile, Module script enviornments
-
-**Kind**: instance property of <code>[JsApi](#JsApi)</code>  
-**Properties**
-
 <table>
   <thead>
     <tr>
@@ -156,12 +132,13 @@ The current user's username. Available in UFile, SFile, Module script enviornmen
     </tr>  </tbody>
 </table>
 
+The current user's username. Available in UFile, SFile, Module script enviornments
+
 <a name="JsApi+logEvent"></a>
 
 ### js.logEvent(pageview, elog, json)
 Log an event.
 
-**Kind**: instance method of <code>[JsApi](#JsApi)</code>  
 <table>
   <thead>
     <tr>
@@ -189,4 +166,3 @@ Log an event.
 ### js.rerender()
 Rerender this module and its children
 
-**Kind**: instance method of <code>[JsApi](#JsApi)</code>  

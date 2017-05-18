@@ -28,16 +28,6 @@ Access to SFiles
 
 :doc:`SFile API</../api_docs/sfile_api>`
 
-.. code-block:: javascript
-
-    // available in the module JS tab namespace
-
-    js.sfile.alias.post(value)          // immediately send the value to the server
-    js.sfile.alias.value                // current value from client cache
-
-    // register a function to handle server pushed values
-    js.sfile.alias.onUpdate(function(new_val){//callback code})
-
 Access to JSLibs
 ^^^^^^^^^^^^^^^^
 

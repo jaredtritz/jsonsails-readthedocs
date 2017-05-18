@@ -3,7 +3,6 @@
 ## SfileAPI
 Implements the Sfile Api for module script.
 
-**Kind**: global class  
 
 * [SfileAPI](#SfileAPI)
     * [.val](#SfileAPI+val) ⇒ <code>\*</code>
@@ -15,14 +14,13 @@ Implements the Sfile Api for module script.
 ### sfile.val ⇒ <code>\*</code>
 Accessor property that returns current value from client cache.
 
-**Kind**: instance property of <code>[SfileAPI](#SfileAPI)</code>  
 <a name="SfileAPI+post"></a>
 
 ### sfile.post(value)
-Send async request to server to update SFile value. The server runs the
-"save" method of the SInterface script to set the new value.
+Sends async request to server to update SFile value. The server runs the
+"save" method of the SInterface script to set the new value and then sends
+a push to any listening clients.
 
-**Kind**: instance method of <code>[SfileAPI](#SfileAPI)</code>  
 <table>
   <thead>
     <tr>
@@ -39,10 +37,9 @@ Send async request to server to update SFile value. The server runs the
 <a name="SfileAPI+onUpdate"></a>
 
 ### sfile.onUpdate(user_callback)
-Register a callback to handle the server push which will be made  whenver
-the SFile value is updated and recieved by all listening users.
+Register a callback to handle the server push which will be made whenver
+the SFile value is updated.
 
-**Kind**: instance method of <code>[SfileAPI](#SfileAPI)</code>  
 <table>
   <thead>
     <tr>

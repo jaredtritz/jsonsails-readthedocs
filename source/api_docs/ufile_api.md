@@ -4,11 +4,10 @@
 Implements UFileApi for module script. Holds the deserialized value of the
 Ufile. The ClientBundle has the serialized value.
 
-**Kind**: global class  
 
 * [UFileAPI](#UFileAPI)
     * [.collection](#UFileAPI.UFileWrapper+collection)
-    * [.value](#UFileAPI+value)
+    * [.value](#UFileAPI+value) ⇒ <code>\*</code>
     * [.raw(username)](#UFileAPI+raw) ⇒ <code>\*</code>
     * [.get()](#UFileAPI+get) ⇒ <code>promise</code>
     * [.set(val)](#UFileAPI+set) ⇒ <code>Promise</code>
@@ -16,6 +15,18 @@ Ufile. The ClientBundle has the serialized value.
 <a name="UFileAPI.UFileWrapper+collection"></a>
 
 ### ufile.collection
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td><code>Object.&lt;username, value&gt;</code></td>
+    </tr>  </tbody>
+</table>
+
 ```eval_rst
 .. _test-jared-ref:
 ```
@@ -31,21 +42,18 @@ Values format:
     }
 <!-- end-label -->
 
-**Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
 <a name="UFileAPI+value"></a>
 
-### ufile.value
+### ufile.value ⇒ <code>\*</code>
 Return value from the UInterface's load method if defined, otherwise
 the users raw value for the UFile.
 
-**Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
 <a name="UFileAPI+raw"></a>
 
 ### ufile.raw(username) ⇒ <code>\*</code>
 Returns the current user's value if no username is given, else returns the
 given user's value. Raw value is not passed through load().
 
-**Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
 <table>
   <thead>
     <tr>
@@ -66,7 +74,6 @@ Initiates an async request to refresh the collection of values of this
 ufile, and returns a Promise. This method is buffered so that calls in
 quick succession will be combined into a single request.
 
-**Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
 <a name="UFileAPI+set"></a>
 
 ### ufile.set(val) ⇒ <code>Promise</code>
@@ -74,7 +81,6 @@ Initiates an async request to update the users value on the server for
 this ufile.  This method is buffered so that calls in quick succession
 will be combined into a single request.
 
-**Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
 **Returns**: <code>Promise</code> - <!-- ufile-set-example -->
 
     // Module JS example w/ promise
