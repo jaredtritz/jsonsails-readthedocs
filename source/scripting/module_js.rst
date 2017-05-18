@@ -36,19 +36,7 @@ The following are valid methods of reading/writing UFiles which have been
 included into a module.  The callback promise can be used to respond once the
 server has saved the value.
 
-.. code-block:: javascript
-
-    // available in the module JS tab namespace
-    js.ufile.alias.value              // output from ufile script's load()
-    js.ufile.alias.raw()              // your own raw value
-    js.ufile.alias.raw('username')    // other user's raw value
-    js.ufile.alias.collection         // {username: value} (immutable)
-    js.ufile.alias.get()              // fetch collection limited by permissions
-    js.ufile.alias.set('new value')   // update value to server
-    // set with callback
-    js.ufile.alias.set('new value').then( ()=>{alert('done')} )
-
-
+:doc:`UFile API</../api_docs/ufile_api>`
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^

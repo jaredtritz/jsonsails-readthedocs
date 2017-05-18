@@ -12,9 +12,6 @@ Ufile. The ClientBundle has the serialized value.
     * [.raw(username)](#UFileAPI+raw) ⇒ <code>\*</code>
     * [.get()](#UFileAPI+get) ⇒ <code>promise</code>
     * [.set(val)](#UFileAPI+set) ⇒ <code>Promise</code>
-    * [.loadValues()](#UFileAPI+loadValues)
-    * [.evaluateScript()](#UFileAPI+evaluateScript)
-    * [.updateCachedValue(val)](#UFileAPI+updateCachedValue) ⇒ <code>string</code>
 
 <a name="UFileAPI.UFileWrapper+collection"></a>
 
@@ -22,7 +19,7 @@ Ufile. The ClientBundle has the serialized value.
 ```eval_rst
 .. _test-jared-ref:
 ```
-Collection of all values for any users having value of the UFile.
+Collection of all raw values for users having a value for the UFile.
 
 Values format:
 <!-- ufile-collection-format -->
@@ -38,7 +35,8 @@ Values format:
 <a name="UFileAPI+value"></a>
 
 ### ufile.value
-output from ufile script load method.
+Return value from the UInterface's load method if defined, otherwise
+the users raw value for the UFile.
 
 **Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
 <a name="UFileAPI+raw"></a>
@@ -64,9 +62,9 @@ given user's value. Raw value is not passed through load().
 <a name="UFileAPI+get"></a>
 
 ### ufile.get() ⇒ <code>promise</code>
-Initiates an async request for the collection values of this ufile, and
-returns a Promise. This method is buffered so that calls in quick
-succession will be combined into a single request.
+Initiates an async request to refresh the collection of values of this
+ufile, and returns a Promise. This method is buffered so that calls in
+quick succession will be combined into a single request.
 
 **Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
 <a name="UFileAPI+set"></a>
@@ -77,6 +75,12 @@ This method is buffered so that calls in quick
 succession will be combined into a single request.
 
 **Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
+**Returns**: <code>Promise</code> - <!-- ufile-set-example -->
+
+    // Module JS example w/ promise
+    js.ufile.alias.set('new value').then( ()=>{alert('done')} ) 
+    
+<!-- end-label -->  
 <table>
   <thead>
     <tr>
@@ -86,38 +90,6 @@ succession will be combined into a single request.
   <tbody>
 <tr>
     <td>val</td><td><p>the new value</p>
-</td>
-    </tr>  </tbody>
-</table>
-
-<a name="UFileAPI+loadValues"></a>
-
-### ufile.loadValues()
-Deserialize and load values. Calls load(myval, collection)
-
-**Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
-<a name="UFileAPI+evaluateScript"></a>
-
-### ufile.evaluateScript()
-Execute the ufile script and override defaults
-
-**Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
-<a name="UFileAPI+updateCachedValue"></a>
-
-### ufile.updateCachedValue(val) ⇒ <code>string</code>
-update cached value in wrapper and the client bundle
-
-**Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
-**Returns**: <code>string</code> - - serialized value  
-<table>
-  <thead>
-    <tr>
-      <th>Param</th><th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td>val</td><td><p>serialized or deserialized value</p>
 </td>
     </tr>  </tbody>
 </table>
