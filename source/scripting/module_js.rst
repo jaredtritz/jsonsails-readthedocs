@@ -14,15 +14,19 @@ Access to UFiles & UValues
 .. code-block:: javascript
     
     // from the Module JS
-    js.ufile.alias.[api method]
+    js.ufile.<alias>.<api method>
 
 :doc:`UFile API</../api_docs/ufile_api>`
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^
 
-The following are valid methods of an SFile which has been
-included into a module.
+.. code-block:: javascript
+    
+    // from the Module JS
+    js.sfile.<alias>.<api method>
+
+:doc:`SFile API</../api_docs/sfile_api>`
 
 .. code-block:: javascript
 
