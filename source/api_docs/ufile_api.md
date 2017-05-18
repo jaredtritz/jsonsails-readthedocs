@@ -35,43 +35,18 @@ Values format:
 <!-- end-label -->
 
 **Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
-**Properties**
-
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td><code>object</code></td>
-    </tr>  </tbody>
-</table>
-
 <a name="UFileAPI+value"></a>
 
 ### ufile.value
 output from ufile script load method.
 
 **Kind**: instance property of <code>[UFileAPI](#UFileAPI)</code>  
-**Properties**
-
-<table>
-  <thead>
-    <tr>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td><code>*</code></td>
-    </tr>  </tbody>
-</table>
-
 <a name="UFileAPI+raw"></a>
 
 ### ufile.raw(username) ⇒ <code>\*</code>
+Returns the current user's value if no username is given, else returns the
+given user's value. Raw value is not passed through load().
+
 **Kind**: instance method of <code>[UFileAPI](#UFileAPI)</code>  
 <table>
   <thead>

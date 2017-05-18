@@ -139,7 +139,7 @@ Dictionary of alias to [ufile](ufile_api.md)
 <a name="JsApi+username"></a>
 
 ### js.username
-The current user's username
+The current user's username. Available in UFile, SFile, Module script enviornments
 
 **Kind**: instance property of <code>[JsApi](#JsApi)</code>  
 **Properties**

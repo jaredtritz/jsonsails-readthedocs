@@ -22,17 +22,6 @@ that UFile.
 The following is an example where ufileX is requested under aliasX as an identified
 collection and ufileY is requested under aliasY as only the user's own value:
 
-.. code-block:: json
-
-    {
-      "aliasX": {
-          "real_id1": {"some-prop":7},
-          "authenticated_id": {"some-prop":7},
-          "real_id2": {"some-prop":7}
-      },
-      "aliasY":{"authenticated_id":"some_string"}
-    }
-
 .. literalinclude:: ../api_docs/ufile_api.md
     :language: json
     :start-after: ufile-collection-format -->
