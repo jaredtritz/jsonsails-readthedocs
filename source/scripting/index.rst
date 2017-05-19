@@ -10,7 +10,7 @@ Scripting Environments
     module_html
     module_css
     logic
-    ufile_script
+    uinterface_script
     sfile_script
     jslib_script
 

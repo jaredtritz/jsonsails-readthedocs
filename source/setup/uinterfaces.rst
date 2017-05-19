@@ -11,4 +11,4 @@ It also involves editing the uinterface script.
 
 See also:
 
-* :ref:`script-ufiles`
+* :ref:`script-uinterfaces`

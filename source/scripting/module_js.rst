@@ -3,7 +3,8 @@
 Module JS
 =========
 
-Any valid javascript is acceptable
+Any valid javascript is acceptable.  In addition, there's a global 'js' object hoisted into context
+which exposes the :doc:`JSonSails API</../api_docs/js_api>`.
 
 .. _`ufile-writing-modulejs`:
 .. _`uvalue-format`:
@@ -11,22 +12,22 @@ Any valid javascript is acceptable
 Access to UFiles & UValues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+UFiles and UValues are managed through a subset of the JSonSails API called the :doc:`UFile API</../api_docs/ufile_api>`
+
 .. code-block:: javascript
     
     // from the Module JS
     js.ufile.<alias>.<api method>
 
-:doc:`UFile API</../api_docs/ufile_api>`
-
 Access to SFiles
 ^^^^^^^^^^^^^^^^
+
+SFiles and SValues are managed through a subset of the JSonSails API called the :doc:`SFile API</../api_docs/sfile_api>`
 
 .. code-block:: javascript
     
     // from the Module JS
     js.sfile.<alias>.<api method>
-
-:doc:`SFile API</../api_docs/sfile_api>`
 
 Access to JSLibs
 ^^^^^^^^^^^^^^^^
