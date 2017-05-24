@@ -3,15 +3,11 @@
 Logic
 =====
 
-The logic tab is JS expected to return a boolean and it determines whether the
+The logic tab script is expected to return a boolean and it determines whether the
 node and everything under it is rendered. 
 
-.. code-block:: javascript
-  
-    // available in the logic tab namespace
-    js.username
-    js.ufile.alias.*
-    js.sfile.alias.*
-
-
+.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/ModuleInterpreter.es6
+    :language: javascript
+    :start-after: logic-script-format -->
+    :end-before: <!-- end
 

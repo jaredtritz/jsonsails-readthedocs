@@ -38,8 +38,7 @@ included into a module.
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    js.jslib.jslib_alias
-    js.jslib['jslib_alias']
+    js.jslib.<alias>.<property, method>
 
 .. _`script-node-attributes`:
 

@@ -65,7 +65,7 @@ DOM element of this node's rendered HTML
     </tr>  </tbody>
 </table>
 
-ID of this node
+ID of this node, also given to id of HTML div tag wrapping this node
 
 <a name="NodeApi+parent"></a>
 
@@ -82,7 +82,7 @@ ID of this node
     </tr>  </tbody>
 </table>
 
-parent of this node
+parent of this node, null for root node
 
 <a name="NodeApi+title"></a>
 
@@ -99,7 +99,7 @@ parent of this node
     </tr>  </tbody>
 </table>
 
-Title of this node
+Title of this node, set from node property
 
 <a name="NodeApi+call"></a>
 
