@@ -9,4 +9,5 @@ The SInterface script is an interface to the SFile data, which is executed on th
     :language: javascript
     :start-after: sinterface-script-format -->
     :end-before: <!-- end
+    :dedent: 4
 

@@ -17,11 +17,4 @@ Script example
     obj.say_hello = function(name){ alert('hello ' + name); }
     module.exports = obj
 
-Screenshot
-^^^^^^^^^^
-
-.. image:: ../../source/images/gui_ufile_script.png
-    :width: 80%
-
-
 

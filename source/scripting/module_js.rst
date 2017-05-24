@@ -17,7 +17,7 @@ UFiles and UValues are managed through a subset of the JSonSails API called the 
 .. code-block:: javascript
     
     // from the Module JS
-    js.ufile.<alias>.<api method>
+    js.ufile.<alias>.*
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^
@@ -27,7 +27,7 @@ SFiles and SValues are managed through a subset of the JSonSails API called the 
 .. code-block:: javascript
     
     // from the Module JS
-    js.sfile.<alias>.<api method>
+    js.sfile.<alias>.*
 
 Access to JSLibs
 ^^^^^^^^^^^^^^^^
@@ -38,7 +38,7 @@ included into a module.
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    js.jslib.<alias>.<property, method>
+    js.jslib.<alias>.*
 
 .. _`script-node-attributes`:
 
@@ -46,55 +46,28 @@ Node attributes
 ^^^^^^^^^^^^^^^
 
 Node attributes can be handy to communicate between nodes, or use the node ID
-to scope a DOM search.
+to scope a DOM search. Access to node is managed through a subset of the JSonSails API called the :doc:`Node API</../api_docs/node_api>`
 
 .. code-block:: javascript
-
-    // available in the module JS tab namespace
-    js.node.parent    // returns parent node (except root returns null)
-    js.node.children  // returns list of child nodes
-    js.node.id        // returns node id, also given to node wrapping html tag
-    js.node.title     // node title, set from node property
-
-Re-Rendering
-^^^^^^^^^^^^
-
-.. code-block:: javascript
-
-    // available in the module JS tab namespace
-    js.rerender     // immediately re-render the current module
+    
+    // from the Module JS
+    js.node.*
 
 Logging
 ^^^^^^^
 
-There is a separate table in the database called the ELog table, for logging events, and the interface
-for pushing data into that table is the same as the Google Analytics interface
-except that the JSonSails table allows for more information to be pushed, like
-the user id, and an extra json field.
+The API method :ref:`JsApi+logEvent` pushes data into a table in the database
+called the ELog table, which stores log event data.  We extended the Google
+Analytics interface to allow for more information to be pushed, like the user
+id, and an extra json field.  The GA logging has the benefit of providing many
+useful views of the resource usage, while the JSonSails log table, when
+exported for analysis can provide much more detailed individual user data.
 
-A call the logger might look something like this
+.. note::
 
-.. code-block:: javascript
+    GA integration is not completed but the logging interface will allow
+    the same logging calls to send logs to a GA account as well.
 
-    // available in the module JS tab namespace
-    // pageview: boolean (indicates to call Google analytics w/ elog information)
-    // elog: json object of named params for GA & jsonsails logging
-    // json: extra json field GA doesn't handle but offers more flexibility in jsonsails logging
-
-    var json = {};
-    var question = model.get_question();
-    json.choices = model.get_choices();
-    json.answer = model.answer;
-    var correct = model.resp_correct();
-    var elog = {
-        'eventCategory': 'nts',
-        'eventAction': 'answer',
-        'eventLabel': 'correct',
-        'eventValue': correct
-    };
-    var elog = {}
-    var json = {}
-    js.logger.logEvent(pageview, elog, json)
 
 
 +----------+--------------------------+--------------------+
@@ -120,11 +93,6 @@ A call the logger might look something like this
 +----------+--------------------------+--------------------+
 | who      | character varying(30)    |   automatic        |
 +----------+--------------------------+--------------------+
-
-The GA logging has the benefit of providing many useful views of the resource
-usage, while the JSonSails log table, when exported for analysis can provide
-much more detailed individual user data.
-
 
 .. _`loading-js-cdn`:
 
