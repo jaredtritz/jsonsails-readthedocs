@@ -65,32 +65,6 @@ A call the logger might look something like this
 
 .. code-block:: javascript
 
-    // available in the module JS tab namespace
-    // pageview: boolean (indicates to call Google analytics w/ elog information)
-    // elog: json object of named params for GA & jsonsails logging
-    // json: extra json field GA doesn't handle but offers more flexibility in jsonsails logging
-
-    var json = {};
-    var question = model.get_question();
-    json.choices = model.get_choices();
-    json.answer = model.answer;
-    var correct = model.resp_correct();
-    var elog = {
-        'eventCategory': 'nts',
-        'eventAction': 'answer',
-        'eventLabel': 'correct',
-        'eventValue': correct
-    };
-    var elog = {}
-    var json = {}
-    js.logger.logEvent(pageview, elog, json)
-
-
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/JsApi.es6
-    :language: javascript
-    :start-after: log-event-format -->
-    :end-before: <!-- end
-
 +----------+--------------------------+--------------------+
 |       ELog Table                                         |
 +----------+--------------------------+--------------------+
