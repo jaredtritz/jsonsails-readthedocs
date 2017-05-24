@@ -8,4 +8,4 @@ SInterface setup involves editing the sfile interface script.
 
 See also:
 
-* :ref:`script-sfiles`
+* :ref:`script-sinterfaces`

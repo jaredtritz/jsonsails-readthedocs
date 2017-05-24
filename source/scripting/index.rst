@@ -11,6 +11,6 @@ Scripting Environments
     module_css
     logic
     uinterface_script
-    sfile_script
+    sinterface_script
     jslib_script
 

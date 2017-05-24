@@ -10,6 +10,6 @@ contexts.
 
 .. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/UFileWrapper.es6
     :language: javascript
-    :start-after: ufile-script-format -->
+    :start-after: uinterface-script-format -->
     :end-before: <!-- end
 
