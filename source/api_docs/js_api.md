@@ -137,8 +137,7 @@ The current user's username. Available in UFile, SFile, Module script enviornmen
 <a name="JsApi+logEvent"></a>
 
 ### js.logEvent(pageview, elog, json)
-Log an event.
-
+Log an event.  
 <table>
   <thead>
     <tr>
@@ -160,6 +159,24 @@ Log an event.
 </td>
     </tr>  </tbody>
 </table>
+
+<!-- log-event-format -->
+
+    var json = {};
+    var question = model.get_question();
+    json.choices = model.get_choices();
+    json.answer = model.answer;
+    var correct = model.resp_correct();
+    var elog = {
+        'eventCategory': 'nts',
+        'eventAction': 'answer',
+        'eventLabel': 'correct',
+        'eventValue': correct
+    };
+    var elog = {}
+    var json = {}
+    js.logger.logEvent(pageview, elog, json)
+<!-- end-label -->
 
 <a name="JsApi+rerender"></a>
 

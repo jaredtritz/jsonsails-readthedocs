@@ -17,7 +17,7 @@ UFiles and UValues are managed through a subset of the JSonSails API called the 
 .. code-block:: javascript
     
     // from the Module JS
-    js.ufile.<alias>.<api method>
+    js.ufile.<alias>.*
 
 Access to SFiles
 ^^^^^^^^^^^^^^^^
@@ -27,7 +27,7 @@ SFiles and SValues are managed through a subset of the JSonSails API called the 
 .. code-block:: javascript
     
     // from the Module JS
-    js.sfile.<alias>.<api method>
+    js.sfile.<alias>.*
 
 Access to JSLibs
 ^^^^^^^^^^^^^^^^
@@ -38,7 +38,7 @@ included into a module.
 .. code-block:: javascript
 
     // available in the module JS tab namespace
-    js.jslib.<alias>.<property, method>
+    js.jslib.<alias>.*
 
 .. _`script-node-attributes`:
 
@@ -46,23 +46,12 @@ Node attributes
 ^^^^^^^^^^^^^^^
 
 Node attributes can be handy to communicate between nodes, or use the node ID
-to scope a DOM search.
+to scope a DOM search. Access to node is managed through a subset of the JSonSails API called the :doc:`Node API</../api_docs/node_api>`
 
 .. code-block:: javascript
-
-    // available in the module JS tab namespace
-    js.node.parent    // returns parent node (except root returns null)
-    js.node.children  // returns list of child nodes
-    js.node.id        // returns node id, also given to node wrapping html tag
-    js.node.title     // node title, set from node property
-
-Re-Rendering
-^^^^^^^^^^^^
-
-.. code-block:: javascript
-
-    // available in the module JS tab namespace
-    js.rerender     // immediately re-render the current module
+    
+    // from the Module JS
+    js.node.*
 
 Logging
 ^^^^^^^
@@ -96,6 +85,11 @@ A call the logger might look something like this
     var json = {}
     js.logger.logEvent(pageview, elog, json)
 
+
+.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/JsApi.es6
+    :language: javascript
+    :start-after: log-event-format -->
+    :end-before: <!-- end
 
 +----------+--------------------------+--------------------+
 |       ELog Table                                         |

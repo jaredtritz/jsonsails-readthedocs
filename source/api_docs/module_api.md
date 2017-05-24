@@ -68,10 +68,6 @@ The title of this module.
 <a name="ModuleApi+bind_method"></a>
 
 ### js.module.bind_method(method_name, callback)
-Bind a function as a method with the given name on reference nodes
-which represent this module. The provided callback function may return a
-value, or a Promise.
-
 <table>
   <thead>
     <tr>
@@ -89,11 +85,13 @@ value, or a Promise.
     </tr>  </tbody>
 </table>
 
+Bind a function as a method with the given name on reference nodes
+which represent this module. The provided callback function may return a
+value, or a Promise.
+
 <a name="ModuleApi+ready"></a>
 
 ### js.module.ready(callback)
-Bind a function to be executed when the module finishes rendering
-
 <table>
   <thead>
     <tr>
@@ -105,4 +103,6 @@ Bind a function to be executed when the module finishes rendering
     <td>callback</td><td><code>function</code></td>
     </tr>  </tbody>
 </table>
+
+Bind a function to be executed when the module finishes rendering
 

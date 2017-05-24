@@ -51,9 +51,6 @@ the users raw value for the UFile.
 <a name="UFileAPI+raw"></a>
 
 ### ufile.raw(username) ⇒ <code>\*</code>
-Returns the current user's value if no username is given, else returns the
-given user's value. Raw value is not passed through load().
-
 <table>
   <thead>
     <tr>
@@ -67,6 +64,9 @@ given user's value. Raw value is not passed through load().
     </tr>  </tbody>
 </table>
 
+Returns the current user's value if no username is given, else returns the
+given user's value. Raw value is not passed through load().
+
 <a name="UFileAPI+get"></a>
 
 ### ufile.get() ⇒ <code>promise</code>
@@ -77,16 +77,6 @@ quick succession will be combined into a single request.
 <a name="UFileAPI+set"></a>
 
 ### ufile.set(val) ⇒ <code>Promise</code>
-Initiates an async request to update the users value on the server for
-this ufile.  This method is buffered so that calls in quick succession
-will be combined into a single request.
-
-**Returns**: <code>Promise</code> - <!-- ufile-set-example -->
-
-    // Module JS example w/ promise
-    js.ufile.alias.set('new value').then( ()=>{alert('done')} ) 
-    
-<!-- end-label -->  
 <table>
   <thead>
     <tr>
@@ -100,3 +90,13 @@ will be combined into a single request.
     </tr>  </tbody>
 </table>
 
+Initiates an async request to update the users value on the server for
+this ufile.  This method is buffered so that calls in quick succession
+will be combined into a single request.
+
+**Returns**: <code>Promise</code> - <!-- ufile-set-example -->
+
+    // Module JS example w/ promise
+    js.ufile.alias.set('new value').then( ()=>{alert('done')} ) 
+    
+<!-- end-label -->  

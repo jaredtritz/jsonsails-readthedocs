@@ -13,7 +13,7 @@ Interface to node objects. The current node object is accessed from `js.node`
     * [.call(method, params)](#NodeApi+call) ⇒ <code>promise</code>
     * [.evaluateLogic()](#NodeApi+evaluateLogic) ⇒ <code>boolean</code>
     * [.onReady(js)](#NodeApi+onReady)
-    * [.render()](#NodeApi+render) ⇒ <code>[NodeApi](#NodeApi)</code>
+    * [.render()](#NodeApi+render) ⇒ [<code>NodeApi</code>](#NodeApi)
     * [.renderChildren(children)](#NodeApi+renderChildren)
 
 <a name="NodeApi+children"></a>
@@ -104,11 +104,6 @@ Title of this node, set from node property
 <a name="NodeApi+call"></a>
 
 ### js.node.call(method, params) ⇒ <code>promise</code>
-Only works on ReferenceNodes. Initiate an async call to the module
-behind the refnode. The method being called needs to be bound first on
-the receiving module using `js.module.bind()`. Returns a Promise which
-will be resolved with the method's return value.
-
 <table>
   <thead>
     <tr>
@@ -125,6 +120,11 @@ will be resolved with the method's return value.
     </tr>  </tbody>
 </table>
 
+Only works on ReferenceNodes. Initiate an async call to the module
+behind the refnode. The method being called needs to be bound first on
+the receiving module using `js.module.bind()`. Returns a Promise which
+will be resolved with the method's return value.
+
 <a name="NodeApi+evaluateLogic"></a>
 
 ### js.node.evaluateLogic() ⇒ <code>boolean</code>
@@ -133,10 +133,6 @@ Run the logic script on this node.
 <a name="NodeApi+onReady"></a>
 
 ### js.node.onReady(js)
-Function that will get called when all descendants of this node have been
-rendered. Set this to a custom function, but remember that the first
-parameter is the [JsApi](js_api.html) interface.
-
 <table>
   <thead>
     <tr>
@@ -150,16 +146,18 @@ parameter is the [JsApi](js_api.html) interface.
     </tr>  </tbody>
 </table>
 
+Function that will get called when all descendants of this node have been
+rendered. Set this to a custom function, but remember that the first
+parameter is the [JsApi](js_api.html) interface.
+
 <a name="NodeApi+render"></a>
 
-### js.node.render() ⇒ <code>[NodeApi](#NodeApi)</code>
+### js.node.render() ⇒ [<code>NodeApi</code>](#NodeApi)
 Method to render DOM of this node
 
 <a name="NodeApi+renderChildren"></a>
 
 ### js.node.renderChildren(children)
-Override this method to customize how children are rendered
-
 <table>
   <thead>
     <tr>
@@ -172,4 +170,6 @@ Override this method to customize how children are rendered
 </td>
     </tr>  </tbody>
 </table>
+
+Override this method to customize how children are rendered
 
