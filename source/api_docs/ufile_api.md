@@ -1,5 +1,9 @@
 <a name="UFileAPI"></a>
 
+```eval_rst
+.. _`UFileAPI`:
+```
+
 ## UFileAPI
 Implements UFileApi for module script. Holds the deserialized value of the
 Ufile. The ClientBundle has the serialized value.
@@ -13,6 +17,10 @@ Ufile. The ClientBundle has the serialized value.
     * [.set(val)](#UFileAPI+set) ⇒ <code>Promise</code>
 
 <a name="UFileAPI.UFileWrapper+collection"></a>
+
+```eval_rst
+.. _`UFileAPI.UFileWrapper+collection`:
+```
 
 ### ufile.collection
 <table>
@@ -44,16 +52,21 @@ Values format:
 
 <a name="UFileAPI+value"></a>
 
+```eval_rst
+.. _`UFileAPI+value`:
+```
+
 ### ufile.value ⇒ <code>\*</code>
 Return value from the UInterface's load method if defined, otherwise
 the users raw value for the UFile.
 
 <a name="UFileAPI+raw"></a>
 
-### ufile.raw(username) ⇒ <code>\*</code>
-Returns the current user's value if no username is given, else returns the
-given user's value. Raw value is not passed through load().
+```eval_rst
+.. _`UFileAPI+raw`:
+```
 
+### ufile.raw(username) ⇒ <code>\*</code>
 <table>
   <thead>
     <tr>
@@ -67,7 +80,14 @@ given user's value. Raw value is not passed through load().
     </tr>  </tbody>
 </table>
 
+Returns the current user's value if no username is given, else returns the
+given user's value. Raw value is not passed through load().
+
 <a name="UFileAPI+get"></a>
+
+```eval_rst
+.. _`UFileAPI+get`:
+```
 
 ### ufile.get() ⇒ <code>promise</code>
 Initiates an async request to refresh the collection of values of this
@@ -76,17 +96,11 @@ quick succession will be combined into a single request.
 
 <a name="UFileAPI+set"></a>
 
+```eval_rst
+.. _`UFileAPI+set`:
+```
+
 ### ufile.set(val) ⇒ <code>Promise</code>
-Initiates an async request to update the users value on the server for
-this ufile.  This method is buffered so that calls in quick succession
-will be combined into a single request.
-
-**Returns**: <code>Promise</code> - <!-- ufile-set-example -->
-
-    // Module JS example w/ promise
-    js.ufile.alias.set('new value').then( ()=>{alert('done')} ) 
-    
-<!-- end-label -->  
 <table>
   <thead>
     <tr>
@@ -100,3 +114,13 @@ will be combined into a single request.
     </tr>  </tbody>
 </table>
 
+Initiates an async request to update the users value on the server for
+this ufile.  This method is buffered so that calls in quick succession
+will be combined into a single request.
+
+**Returns**: <code>Promise</code> - <!-- ufile-set-example -->
+
+    // Module JS example w/ promise
+    js.ufile.alias.set('new value').then( ()=>{alert('done')} ) 
+    
+<!-- end-label -->  
