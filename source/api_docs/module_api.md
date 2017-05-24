@@ -1,5 +1,9 @@
 <a name="ModuleApi"></a>
 
+```eval_rst
+.. _`ModuleApi`:
+```
+
 ## ModuleApi
 Interface to module object. The current module object is accessed from
 `js.module`.
@@ -13,6 +17,10 @@ Interface to module object. The current module object is accessed from
     * [.ready(callback)](#ModuleApi+ready)
 
 <a name="ModuleApi+children"></a>
+
+```eval_rst
+.. _`ModuleApi+children`:
+```
 
 ### js.module.children
 <table>
@@ -33,6 +41,10 @@ anywhere in the module.
 
 <a name="ModuleApi+root"></a>
 
+```eval_rst
+.. _`ModuleApi+root`:
+```
+
 ### js.module.root
 <table>
   <thead>
@@ -50,6 +62,10 @@ Root node object of this module.
 
 <a name="ModuleApi+title"></a>
 
+```eval_rst
+.. _`ModuleApi+title`:
+```
+
 ### js.module.title
 <table>
   <thead>
@@ -66,6 +82,10 @@ Root node object of this module.
 The title of this module.
 
 <a name="ModuleApi+bind_method"></a>
+
+```eval_rst
+.. _`ModuleApi+bind_method`:
+```
 
 ### js.module.bind_method(method_name, callback)
 <table>
@@ -90,6 +110,10 @@ which represent this module. The provided callback function may return a
 value, or a Promise.
 
 <a name="ModuleApi+ready"></a>
+
+```eval_rst
+.. _`ModuleApi+ready`:
+```
 
 ### js.module.ready(callback)
 <table>

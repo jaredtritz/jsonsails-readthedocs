@@ -1,5 +1,9 @@
 <a name="SfileAPI"></a>
 
+```eval_rst
+.. _`SfileAPI`:
+```
+
 ## SfileAPI
 Implements the Sfile Api for module script.
 
@@ -11,10 +15,18 @@ Implements the Sfile Api for module script.
 
 <a name="SfileAPI+val"></a>
 
+```eval_rst
+.. _`SfileAPI+val`:
+```
+
 ### sfile.val ⇒ <code>\*</code>
 Accessor property that returns current value from client cache.
 
 <a name="SfileAPI+post"></a>
+
+```eval_rst
+.. _`SfileAPI+post`:
+```
 
 ### sfile.post(value)
 <table>
@@ -35,6 +47,10 @@ Sends async request to server to update SFile value. The server runs the
 a push to any listening clients.
 
 <a name="SfileAPI+onUpdate"></a>
+
+```eval_rst
+.. _`SfileAPI+onUpdate`:
+```
 
 ### sfile.onUpdate(user_callback)
 <table>

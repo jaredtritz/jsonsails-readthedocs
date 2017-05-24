@@ -1,5 +1,9 @@
 <a name="NodeApi"></a>
 
+```eval_rst
+.. _`NodeApi`:
+```
+
 ## NodeApi
 Interface to node objects. The current node object is accessed from `js.node`
 
@@ -18,6 +22,10 @@ Interface to node objects. The current node object is accessed from `js.node`
 
 <a name="NodeApi+children"></a>
 
+```eval_rst
+.. _`NodeApi+children`:
+```
+
 ### js.node.children
 <table>
   <thead>
@@ -34,6 +42,10 @@ Interface to node objects. The current node object is accessed from `js.node`
 Array of child nodes once children have been rendered
 
 <a name="NodeApi+dom"></a>
+
+```eval_rst
+.. _`NodeApi+dom`:
+```
 
 ### js.node.dom
 <table>
@@ -52,6 +64,10 @@ DOM element of this node's rendered HTML
 
 <a name="NodeApi+id"></a>
 
+```eval_rst
+.. _`NodeApi+id`:
+```
+
 ### js.node.id
 <table>
   <thead>
@@ -68,6 +84,10 @@ DOM element of this node's rendered HTML
 ID of this node, also given to id of HTML div tag wrapping this node
 
 <a name="NodeApi+parent"></a>
+
+```eval_rst
+.. _`NodeApi+parent`:
+```
 
 ### js.node.parent
 <table>
@@ -86,6 +106,10 @@ parent of this node, null for root node
 
 <a name="NodeApi+title"></a>
 
+```eval_rst
+.. _`NodeApi+title`:
+```
+
 ### js.node.title
 <table>
   <thead>
@@ -102,6 +126,10 @@ parent of this node, null for root node
 Title of this node, set from node property
 
 <a name="NodeApi+call"></a>
+
+```eval_rst
+.. _`NodeApi+call`:
+```
 
 ### js.node.call(method, params) ⇒ <code>promise</code>
 <table>
@@ -127,10 +155,18 @@ will be resolved with the method's return value.
 
 <a name="NodeApi+evaluateLogic"></a>
 
+```eval_rst
+.. _`NodeApi+evaluateLogic`:
+```
+
 ### js.node.evaluateLogic() ⇒ <code>boolean</code>
 Run the logic script on this node.
 
 <a name="NodeApi+onReady"></a>
+
+```eval_rst
+.. _`NodeApi+onReady`:
+```
 
 ### js.node.onReady(js)
 <table>
@@ -152,10 +188,18 @@ parameter is the [JsApi](js_api.html) interface.
 
 <a name="NodeApi+render"></a>
 
+```eval_rst
+.. _`NodeApi+render`:
+```
+
 ### js.node.render() ⇒ [<code>NodeApi</code>](#NodeApi)
 Method to render DOM of this node
 
 <a name="NodeApi+renderChildren"></a>
+
+```eval_rst
+.. _`NodeApi+renderChildren`:
+```
 
 ### js.node.renderChildren(children)
 <table>
