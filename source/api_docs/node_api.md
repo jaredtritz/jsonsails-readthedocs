@@ -160,7 +160,10 @@ will be resolved with the method's return value.
 ```
 
 ### js.node.evaluateLogic() ⇒ <code>boolean</code>
-Run the logic script on this node.
+Run the logic script on this node. Used when implementing a custom
+[renderChildren](#NodeApi+renderChildren) function, to
+conditionally render child nodes.
+Returns true or false, the result of this node's logic script.
 
 <a name="NodeApi+onReady"></a>
 
@@ -193,7 +196,9 @@ parameter is the [JsApi](js_api.html) interface.
 ```
 
 ### js.node.render() ⇒ [<code>NodeApi</code>](#NodeApi)
-Method to render DOM of this node
+Method to render DOM of this node. Should only be called within the
+renderChildren function. See
+[renderChildren](#NodeApi+renderChildren) for example usage.
 
 <a name="NodeApi+renderChildren"></a>
 
@@ -216,6 +221,11 @@ Override this method to customize how children are rendered.
     </tr>  </tbody>
 </table>
 
+This method is passed an array of child nodes which may be
+rendered, the resulting child dom appended to `this.dom`. The array of
+rendered children must be returned or else the children of the rendered
+children will not be rendered.
+>>>>>>> 14b356cebe3b847a8b631c1cd4467c100677bfe4
 This is the default function to use if not overridden:
 ```eval_rst
 .. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/NodeApi.es6
@@ -223,4 +233,11 @@ This is the default function to use if not overridden:
     :dedent: 2
     :lines: 94-104
 ```
+=======
+    :lines: 106-116
+```
+See also:
+- [render](#NodeApi+render)
+- [evaluateLogic](#NodeApi+evaluateLogic)
+>>>>>>> 14b356cebe3b847a8b631c1cd4467c100677bfe4
 
