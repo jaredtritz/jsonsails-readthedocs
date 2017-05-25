@@ -202,6 +202,7 @@ Method to render DOM of this node
 ```
 
 ### js.node.renderChildren(children)
+Override this method to customize how children are rendered.  
 <table>
   <thead>
     <tr>
@@ -215,5 +216,11 @@ Method to render DOM of this node
     </tr>  </tbody>
 </table>
 
-Override this method to customize how children are rendered
+This is the default function to use if not overridden:
+```eval_rst
+.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/NodeApi.es6
+    :language: javascript
+    :dedent: 2
+    :lines: 94-104
+```
 

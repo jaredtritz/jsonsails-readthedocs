@@ -8,13 +8,10 @@ object.  The object which will be accessed in the including environment under
 the alias which it is given on the including setup page.
 
 
-Script example
-^^^^^^^^^^^^^^
-
-.. code-block:: javascript
-
-    var obj = {}; 
-    obj.say_hello = function(name){ alert('hello ' + name); }
-    module.exports = obj
+.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/JsLibMgr.es6
+    :language: javascript
+    :start-after: jslib-script-format -->
+    :end-before: <!-- end
+    :dedent: 2
 
 

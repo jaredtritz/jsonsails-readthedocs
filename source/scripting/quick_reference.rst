@@ -4,20 +4,6 @@ Quick Reference
 
 All in one spot API syntax reference for various environments.
 
-
-Example links & includes
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-doc links:
-
-:doc:`../api_docs/ufile_api`
-
-:doc:`rename the link </../api_docs/ufile_api>`
-
-within doc links:
-
-:ref:`js.username <test-jared-ref>`
-
 Module HTML
 ^^^^^^^^^^^
 
