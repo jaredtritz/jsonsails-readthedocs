@@ -7,7 +7,7 @@ Welcome to JSonSails.com_ docs
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: Quick Start Guides
+    :caption: Quick Start
 
     video-guides
     examples/index
