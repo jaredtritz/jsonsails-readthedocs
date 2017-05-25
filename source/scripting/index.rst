@@ -13,4 +13,5 @@ Scripting Environments
     uinterface_script
     sinterface_script
     jslib_script
+    config_script
 

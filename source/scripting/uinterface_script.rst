@@ -12,4 +12,5 @@ contexts.
     :language: javascript
     :start-after: uinterface-script-format -->
     :end-before: <!-- end
+    :dedent: 4
 

@@ -12,4 +12,5 @@ Doc extracted directly from doc strings in the source code
     node_api
     sfile_api
     ufile_api
+    config_api
 

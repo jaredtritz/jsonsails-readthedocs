@@ -225,19 +225,14 @@ This method is passed an array of child nodes which may be
 rendered, the resulting child dom appended to `this.dom`. The array of
 rendered children must be returned or else the children of the rendered
 children will not be rendered.
->>>>>>> 14b356cebe3b847a8b631c1cd4467c100677bfe4
 This is the default function to use if not overridden:
 ```eval_rst
 .. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/NodeApi.es6
     :language: javascript
     :dedent: 2
-    :lines: 94-104
-```
-=======
     :lines: 106-116
 ```
 See also:
 - [render](#NodeApi+render)
 - [evaluateLogic](#NodeApi+evaluateLogic)
->>>>>>> 14b356cebe3b847a8b631c1cd4467c100677bfe4
 
