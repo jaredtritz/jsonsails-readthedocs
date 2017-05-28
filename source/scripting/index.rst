@@ -5,7 +5,6 @@ Scripting Environments
     :maxdepth: 1
     :glob:
 
-    quick_reference
     module_js
     module_html
     module_css
