@@ -101,7 +101,7 @@ Current [module](module_api.md) object.
     </tr>  </tbody>
 </table>
 
-Current [node](node_api.md) object, set for each node begin evaluated.
+Current [node](node_api.md) object, set for each node being evaluated.
 
 <a name="JsApi+sfile"></a>
 
