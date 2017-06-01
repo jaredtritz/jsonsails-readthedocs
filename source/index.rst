@@ -15,7 +15,7 @@ Welcome to JSonSails.com_ docs
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: Big Picture
+    :caption: Overview
 
     introduction/index
     concepts/index
@@ -23,7 +23,7 @@ Welcome to JSonSails.com_ docs
 .. toctree::
     :maxdepth: 5
     :glob:
-    :caption: User Manual
+    :caption: Programmers Manual
 
     setup/index
     module_ide/index
