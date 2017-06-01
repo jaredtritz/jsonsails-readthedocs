@@ -23,17 +23,17 @@ Welcome to JSonSails.com_ docs
 .. toctree::
     :maxdepth: 5
     :glob:
-    :caption: Programmers Manual
+    :caption: Development Environment Help
 
-    setup/index
     module_ide/index
-    scripting/index
+    setup/index
 
 .. toctree::
     :maxdepth: 2
     :glob:
-    :caption: API Refererence
+    :caption: Programmers Manual
 
+    scripting/index
     api_docs/index
 
 
