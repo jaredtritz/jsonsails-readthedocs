@@ -23,7 +23,7 @@ Welcome to JSonSails.com_ docs
 .. toctree::
     :maxdepth: 5
     :glob:
-    :caption: Development Environment Help
+    :caption: Interface Help
 
     module_ide/index
     setup/index
