@@ -16,7 +16,7 @@ Interface to node objects. The current node object is accessed from `js.node`
     * [.title](#NodeApi+title)
     * [.call(method, params)](#NodeApi+call) ⇒ <code>promise</code>
     * [.evaluateLogic()](#NodeApi+evaluateLogic) ⇒ <code>boolean</code>
-    * [.onReady(js)](#NodeApi+onReady)
+    * [.ready(callback)](#NodeApi+ready)
     * [.render()](#NodeApi+render) ⇒ [<code>NodeApi</code>](#NodeApi)
     * [.renderChildren(children)](#NodeApi+renderChildren)
 
@@ -165,29 +165,28 @@ Run the logic script on this node. Used when implementing a custom
 conditionally render child nodes.
 Returns true or false, the result of this node's logic script.
 
-<a name="NodeApi+onReady"></a>
+<a name="NodeApi+ready"></a>
 
 ```eval_rst
-.. _`NodeApi+onReady`:
+.. _`NodeApi+ready`:
 ```
 
-### js.node.onReady(js)
+### js.node.ready(callback)
 <table>
   <thead>
     <tr>
-      <th>Param</th><th>Type</th><th>Description</th>
+      <th>Param</th><th>Description</th>
     </tr>
   </thead>
   <tbody>
 <tr>
-    <td>js</td><td><code>JsApi</code></td><td><p>The <a href="js_api.html">JsApi</a> interface object</p>
+    <td>callback</td><td><p>function to call when node has been rendered.</p>
 </td>
     </tr>  </tbody>
 </table>
 
-Function that will get called when all descendants of this node have been
-rendered. Set this to a custom function, but remember that the first
-parameter is the [JsApi](js_api.html) interface.
+Accepts a function that will get called when all descendants of this node have been
+rendered. The function context `this` will be set to this node.
 
 <a name="NodeApi+render"></a>
 
@@ -230,7 +229,7 @@ This is the default function to use if not overridden:
 .. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/NodeApi.es6
     :language: javascript
     :dedent: 2
-    :lines: 106-116
+    :lines: 107-117
 ```
 See also:
 - [render](#NodeApi+render)

@@ -15,6 +15,7 @@ Interface to module object. The current module object is accessed from
     * [.title](#ModuleApi+title)
     * [.bind_method(method_name, callback)](#ModuleApi+bind_method)
     * [.ready(callback)](#ModuleApi+ready)
+    * [.findNode()](#ModuleApi+findNode)
 
 <a name="ModuleApi+children"></a>
 
@@ -129,4 +130,13 @@ value, or a Promise.
 </table>
 
 Bind a function to be executed when the module finishes rendering
+
+<a name="ModuleApi+findNode"></a>
+
+```eval_rst
+.. _`ModuleApi+findNode`:
+```
+
+### js.module.findNode()
+Find the first node in the module which matches the pattern.
 
