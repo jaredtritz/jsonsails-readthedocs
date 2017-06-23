@@ -15,7 +15,7 @@ Interface to module object. The current module object is accessed from
     * [.title](#ModuleApi+title)
     * [.bind_method(method_name, callback)](#ModuleApi+bind_method)
     * [.ready(callback)](#ModuleApi+ready)
-    * [.findNode()](#ModuleApi+findNode)
+    * [.findNode(pattern)](#ModuleApi+findNode) ⇒ <code>NodeApi</code> \| <code>null</code>
 
 <a name="ModuleApi+children"></a>
 
@@ -137,6 +137,20 @@ Bind a function to be executed when the module finishes rendering
 .. _`ModuleApi+findNode`:
 ```
 
-### js.module.findNode()
+### js.module.findNode(pattern) ⇒ <code>NodeApi</code> \| <code>null</code>
+<table>
+  <thead>
+    <tr>
+      <th>Param</th><th>Type</th><th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td>pattern</td><td><code>object</code></td><td><p>object to match with a node, using <a href="https://lodash.com/docs#isMatch">_.isMatch()</a></p>
+</td>
+    </tr>  </tbody>
+</table>
+
 Find the first node in the module which matches the pattern.
 
+**Returns**: <code>NodeApi</code> \| <code>null</code> - the matching NodeApi object, or `null` if not found.  
