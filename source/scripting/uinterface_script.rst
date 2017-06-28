@@ -8,9 +8,6 @@ that way anyhow.  The script can access the ufile values, and whatever the
 script returns replaces the user's value in the Module JS and Module HTML
 contexts.
 
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/UFileWrapper.es6
+.. literalinclude:: ../comments/UFileWrapper.es6_uinterface-script-format.js
     :language: javascript
-    :start-after: uinterface-script-format -->
-    :end-before: <!-- end
-    :dedent: 4
 

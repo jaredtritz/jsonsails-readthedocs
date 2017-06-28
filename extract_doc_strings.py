@@ -55,7 +55,8 @@ file_list = [
 '../ezbuilder/src/javascript/server/node-sfile.es6',
 '../ezbuilder/src/javascript/authoring/renderer/UfileTagReplacer.es6',
 '../ezbuilder/src/javascript/authoring/renderer/ModuleInterpreter.es6',
-'../ezbuilder/src/javascript/authoring/renderer/JsLibMgr.es6'
+'../ezbuilder/src/javascript/authoring/renderer/JsLibMgr.es6',
+'../ezbuilder/src/javascript/authoring/jsapi/NodeApi.es6'
 ]
 
 parser = Parser()
@@ -63,6 +64,7 @@ parser = Parser()
 for ifile in file_list:
     parser.current_file = os.path.split(ifile)[1]
     # read in the file
+    print('extracting comments: ', ifile)
     with open(ifile, 'rb') as source_file: 
         for line in source_file:
             parser.funk_pnt(line.decode())

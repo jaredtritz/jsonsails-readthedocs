@@ -8,10 +8,7 @@ object.  The object which will be accessed in the including environment under
 the alias which it is given on the including setup page.
 
 
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/JsLibMgr.es6
+.. literalinclude:: ../comments/JsLibMgr.es6_jslib-script-format.js
     :language: javascript
-    :start-after: jslib-script-format -->
-    :end-before: <!-- end
-    :dedent: 2
 
 

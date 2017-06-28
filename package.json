@@ -1,0 +1,22 @@
+{
+  "name": "jsonsails-readthedocs",
+  "version": "1.0.0",
+  "description": "jsonsails doc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredtritz/jsonsails-readthedocs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaredtritz/jsonsails-readthedocs/issues"
+  },
+  "homepage": "https://github.com/jaredtritz/jsonsails-readthedocs#readme",
+  "dependencies": {
+    "jsdoc-to-markdown": "^3.0.0"
+  }
+}

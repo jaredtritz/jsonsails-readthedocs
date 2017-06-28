@@ -1,0 +1,13 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "source": {
+    "includePattern": ".+\\.(js|es6|jsx)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  }
+}

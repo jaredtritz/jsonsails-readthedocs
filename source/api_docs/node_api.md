@@ -16,7 +16,7 @@ Interface to node objects. The current node object is accessed from `js.node`
     * [.title](#NodeApi+title)
     * [.call(method, params)](#NodeApi+call) ⇒ <code>promise</code>
     * [.evaluateLogic()](#NodeApi+evaluateLogic) ⇒ <code>boolean</code>
-    * [.ready(callback)](#NodeApi+ready)
+    * [.onReady(js)](#NodeApi+onReady)
     * [.render()](#NodeApi+render) ⇒ [<code>NodeApi</code>](#NodeApi)
     * [.renderChildren(children)](#NodeApi+renderChildren)
 
@@ -165,28 +165,29 @@ Run the logic script on this node. Used when implementing a custom
 conditionally render child nodes.
 Returns true or false, the result of this node's logic script.
 
-<a name="NodeApi+ready"></a>
+<a name="NodeApi+onReady"></a>
 
 ```eval_rst
-.. _`NodeApi+ready`:
+.. _`NodeApi+onReady`:
 ```
 
-### js.node.ready(callback)
+### js.node.onReady(js)
 <table>
   <thead>
     <tr>
-      <th>Param</th><th>Description</th>
+      <th>Param</th><th>Type</th><th>Description</th>
     </tr>
   </thead>
   <tbody>
 <tr>
-    <td>callback</td><td><p>function to call when node has been rendered.</p>
+    <td>js</td><td><code>JsApi</code></td><td><p>The <a href="js_api.html">JsApi</a> interface object</p>
 </td>
     </tr>  </tbody>
 </table>
 
-Accepts a function that will get called when all descendants of this node have been
-rendered. The function context `this` will be set to this node.
+Function that will get called when all descendants of this node have been
+rendered. Set this to a custom function, but remember that the first
+parameter is the [JsApi](js_api.html) interface.
 
 <a name="NodeApi+render"></a>
 
@@ -226,10 +227,8 @@ rendered children must be returned or else the children of the rendered
 children will not be rendered.
 This is the default function to use if not overridden:
 ```eval_rst
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/jsapi/NodeApi.es6
+.. literalinclude:: ../comments/NodeApi.es6_render-children-method.js
     :language: javascript
-    :dedent: 2
-    :lines: 107-117
 ```
 See also:
 - [render](#NodeApi+render)

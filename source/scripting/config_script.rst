@@ -8,15 +8,9 @@ GUI widgets for configuration of a module. Items are added sequentially in a
 vertical layout as the script executes.  Below are some example scripts for 
 various config elements.
 
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/ConfigApi.jsx
+.. literalinclude:: ../comments/ConfigApi.jsx_add-label-format.js
     :language: javascript
-    :start-after: add-label-format -->
-    :end-before: <!-- end
-    :dedent: 2
 
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/ConfigApi.jsx
+.. literalinclude:: ../comments/ConfigApi.jsx_add-plus-area-format.js
     :language: javascript
-    :start-after: add-plus-area-format -->
-    :end-before: <!-- end
-    :dedent: 2
 

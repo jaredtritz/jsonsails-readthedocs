@@ -16,11 +16,8 @@ Properties of a UFile object are accessible in the HTML.  The easiest way to
 utilize this feature is to attach these properties to an object in the UFile 
 script and return the object as the UFile value.
 
-.. literalinclude:: ../../../ezbuilder/src/javascript/authoring/renderer/UfileTagReplacer.es6
+.. literalinclude:: ../comments/UfileTagReplacer.es6_html-ufile-tag-format.js
     :language: html
-    :start-after: html-ufile-tag-format -->
-    :end-before: <!-- end
-    :dedent: 4
 
 
 See also:

@@ -2,4 +2,8 @@
 
 python extract_doc_strings.py
 
-#make html
+cd docgen
+node generate_docs.js
+cd ..
+
+make html
