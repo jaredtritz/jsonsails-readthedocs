@@ -2,4 +2,4 @@
 
 python extract_doc_strings.py
 
-make html
+#make html
