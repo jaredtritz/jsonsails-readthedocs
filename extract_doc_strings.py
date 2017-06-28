@@ -52,7 +52,10 @@ class Parser:
 file_list = [
 '../ezbuilder/src/javascript/authoring/renderer/UFileWrapper.es6',
 '../ezbuilder/src/javascript/authoring/renderer/ConfigApi.jsx',
-'../ezbuilder/src/javascript/server/node-sfile.es6'
+'../ezbuilder/src/javascript/server/node-sfile.es6',
+'../ezbuilder/src/javascript/authoring/renderer/UfileTagReplacer.es6',
+'../ezbuilder/src/javascript/authoring/renderer/ModuleInterpreter.es6',
+'../ezbuilder/src/javascript/authoring/renderer/JsLibMgr.es6'
 ]
 
 parser = Parser()
