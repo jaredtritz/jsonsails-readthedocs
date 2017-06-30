@@ -2,12 +2,12 @@
 Hands on Tutorials
 ==================
 
-This collection of written tutorials should help you become familiar with the
-IDE and concepts needed to create and manage modules using JSonSails.
+This will be a collection of written tutorials to help you build modules and
+should help you become familiar with the IDE and other concepts needed to
+create and manage modules using JSonSails.
 
 .. toctree::
     :maxdepth: 1
     :glob:
 
-    mvc_module
 
