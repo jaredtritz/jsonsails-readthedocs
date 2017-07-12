@@ -31,7 +31,7 @@ step is to request it by simply including it.  Then one of several things will
 happen then depending on what the price is set to.
 
 price = 0
-  Anyone requesting the item will be granted access for free
+  Anyone requesting the item will be granted permission for free
 
 price = postive integer
   Permission will be granted to anyone upon payment of the price
