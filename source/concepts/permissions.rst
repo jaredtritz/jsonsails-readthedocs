@@ -30,20 +30,21 @@ When you want to use someone else's resource as part of your module the first
 step is to request it by simply including it.  Then one of several things will 
 happen then depending on what the price is set to.
 
-price = postive integer
-  something else
-
 price = 0
-  another thing
+  Anyone requesting the item will be granted access for free
+
+price = postive integer
+  Permission will be granted to anyone upon payment of the price
 
 price = null
-  This will generate a request to
-  the owner who can either permit use or ignore the request.  Requests are
-  passive, meaning that the owner can review requests at their leisure, but there
-  is no notification.  Therefore, if you want to use someone's resource it's best
-  to coordinate with them outside the system via email or something, asking them
-  to permit your request.  Their user profile page might be helpful in finding
-  their email address.
+  Owner will have to review the request and can then either permit for free, or set
+  a custom price. If a custom price is set the permission is granted upon payment.
+
+Requests are passive, meaning that the owner can review requests
+at their leisure, but there is no notification.  Therefore, if you want to use
+someone's resource it's best to coordinate with them outside the system via
+email or something, asking them to permit your request.  Their user profile
+page might be helpful in finding their email address.
 
 Permission requests can be reviewed either from the setup page
 of the including object, or on the buying page which aggregates all requests
