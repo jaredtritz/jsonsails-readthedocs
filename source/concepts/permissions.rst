@@ -1,8 +1,11 @@
-Permissions
-===========
+Ownership and permission 
+========================
 
-Permissions are what allow owners to manage and track how their resources are
-used by others.  
+All resources in JSonSails have an owner who grants permission to others to use
+the resource for their own purpose. We implement a permission model to manage
+requesting and granting privileges for each resource.  Only the owner of a
+resource can edit that resource, and the owner can pass ownership of the
+resource to anyone they choose.  
 
 .. _`including-permission`:
 
@@ -33,9 +36,9 @@ to permit your request.  Their user profile page might be helpful in finding
 their email address.
 
 Permission requests can be reviewed either from the setup page
-of the including object, or on the requests page which aggregates all requests
+of the including object, or on the buying page which aggregates all requests
 made by the authenticated user.  Permission approvals can be granted either from
-the setup page for the object being included, or from the approvals page which
+the setup page for the object being included, or from the selling page which
 aggregates all requested for objects owned by the authenticated user. 
 
 .. _`ufile-writing-permission`:

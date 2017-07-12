@@ -1,6 +1,6 @@
 
-Development Cycle
-=================
+Edit/Preview
+============
 
 Module development is an iterative process of editing and previewing, and
 toggling between these modes is achieved with a radio button in the IDE top

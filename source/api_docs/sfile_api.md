@@ -9,17 +9,17 @@ Implements the Sfile Api for module script.
 
 
 * [SfileAPI](#SfileAPI)
-    * [.val](#SfileAPI+val) ⇒ <code>\*</code>
+    * [.value](#SfileAPI+value) ⇒ <code>\*</code>
     * [.post(value)](#SfileAPI+post)
     * [.onUpdate(user_callback)](#SfileAPI+onUpdate)
 
-<a name="SfileAPI+val"></a>
+<a name="SfileAPI+value"></a>
 
 ```eval_rst
-.. _`SfileAPI+val`:
+.. _`SfileAPI+value`:
 ```
 
-### sfile.val ⇒ <code>\*</code>
+### sfile.value ⇒ <code>\*</code>
 Accessor property that returns current value from client cache.
 
 <a name="SfileAPI+post"></a>

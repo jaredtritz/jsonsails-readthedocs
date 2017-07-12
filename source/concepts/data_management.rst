@@ -11,7 +11,7 @@ perform an offline analysis.
 .. _`data-management-import`:
 
 Importing UValues
-=================
+^^^^^^^^^^^^^^^^^
 
 UValues are the user values associated to a UFile.  They can be imported from the
 UFile setup page by clicking the "Import values" action.
@@ -23,7 +23,7 @@ The import page accepts a CSV file and describes format requirements.
 .. _`data-management-export`:
 
 Exporting UValues
-=================
+^^^^^^^^^^^^^^^^^
 
 UValues are the user values associated to a UFile.  They can be exported from the
 UFile setup page by clicking the "Export values" action.

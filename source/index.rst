@@ -17,7 +17,7 @@ Welcome to JSonSails.com_ docs
     :glob:
     :caption: Overview
 
-    introduction/index
+    vision/index
     concepts/index
 
 .. toctree::
