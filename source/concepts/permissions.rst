@@ -28,7 +28,7 @@ permitted, the item is not loaded.
 
 When you want to use someone else's resource as part of your module the first
 step is to request it by simply including it.  Then one of several things will 
-happen then depending on what the price is set to.
+happen then depending on what the price.
 
 price = 0
   Anyone requesting the item will be granted permission for free
