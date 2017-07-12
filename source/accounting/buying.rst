@@ -1,0 +1,6 @@
+Buying page
+===========
+
+buying stuff
+
+

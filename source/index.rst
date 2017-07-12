@@ -27,6 +27,8 @@ Welcome to JSonSails.com_ docs
 
     module_ide/index
     setup/index
+    folders/index
+    accounting/index
 
 .. toctree::
     :maxdepth: 2
