@@ -58,17 +58,20 @@ Technical developers
 
 We want to make sure that code is always exposed all the way to lowest level so
 that technical developers can always inspect and evaluate the quality,
-reusability, and adaptability of a resource. 
+reusability, and adaptability of a resource.
 
 .. _`non-tech-developers`:
 
 Non-technical developers
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-We also want to ensure resources, such as code and user data are easy to adapt,
-share, evolve, and maintain, even for non-technical developers.  Thus, we've
-designed our IDE to support configuration and composition of resources as well,
-giving equal or higher priority to the creation of new resources through
-non-technical combination and configuration of existing resources.
+We also want to ensure that we support configuration of modules for non-technical 
+developers.
+
+Thus, modules can expose a standardized configuration interface making it easy
+for non-technical developers to be creative too.  Thus, we've designed our IDE
+to support configuration and composition of resources, giving equally high
+priority to the module configuration process. The configuration mode hides all 
+the technical options, exposing only the UI used for configuration.
 
 
