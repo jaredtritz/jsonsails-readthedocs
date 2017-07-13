@@ -12,3 +12,5 @@ It also involves editing the uinterface script.
 See also:
 
 * :ref:`script-uinterfaces`
+* :ref:`including-permission`
+

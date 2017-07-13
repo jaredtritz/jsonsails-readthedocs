@@ -7,7 +7,6 @@ Any valid javascript is acceptable.  In addition, there's a global 'js' object h
 which exposes the :doc:`JSonSails API</../api_docs/js_api>`.
 
 .. _`ufile-writing-modulejs`:
-.. _`uvalue-format`:
 
 Access to UFiles & UValues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,8 +68,6 @@ detailed individual user data.
     GA integration is not completed but the logging interface will allow
     the same logging calls to send logs to a GA account as well.
 
-
-
 +----------+--------------------------+--------------------+
 |       ELog Table                                         |
 +----------+--------------------------+--------------------+
@@ -94,6 +91,15 @@ detailed individual user data.
 +----------+--------------------------+--------------------+
 | who      | character varying(30)    |   automatic        |
 +----------+--------------------------+--------------------+
+
+.. note::
+    
+    When a module does not require authentication then the IP address will be
+    placed in the "who" column"
+
+See also:
+
+* :ref:`module-viewing-permission`
 
 .. _`loading-js-cdn`:
 

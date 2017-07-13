@@ -17,5 +17,6 @@ the same effect as setting the reference behavior for modules themselves.
 See also:
 
 * :ref:`module-ref-behavior`
+* :ref:`including-permission`
 
 

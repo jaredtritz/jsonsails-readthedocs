@@ -34,6 +34,10 @@ birthday wish message or image, while a configurable survey module may have
 configurable questions, or background color. The choice of what is configurable
 is left up to the modules technical developer and owner.
 
+See also 
+
+* :ref:`module-viewing-permission`
+
 Consists of
 ^^^^^^^^^^^
 

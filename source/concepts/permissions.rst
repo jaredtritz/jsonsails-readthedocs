@@ -1,4 +1,4 @@
-Ownership and permission 
+Permission and ownership 
 ========================
 
 All resources in JSonSails have an owner who grants permission to others to use
@@ -30,15 +30,15 @@ When you want to use someone else's resource as part of your module the first
 step is to request it by simply including it.  Then one of several things will 
 happen then depending on what the price.
 
+price = null (default)
+  Owner will have to review the request and can then either permit for free, or set
+  a custom price. If a custom price is set the permission is granted upon payment.
+
 price = 0
   Anyone requesting the item will be granted permission for free
 
 price = postive integer
   Permission will be granted to anyone upon payment of the price
-
-price = null
-  Owner will have to review the request and can then either permit for free, or set
-  a custom price. If a custom price is set the permission is granted upon payment.
 
 Requests are passive, meaning that the owner can review requests
 at their leisure, but there is no notification.  Therefore, if you want to use
@@ -52,9 +52,33 @@ made by the authenticated user.  Permission approvals can be granted either from
 the setup page for the object being included, or from the selling page which
 aggregates all requested for objects owned by the authenticated user. 
 
+.. _`module-viewing-permission`:
+
+Permission to view
+^^^^^^^^^^^^^^^^^^
+
+.. note::
+
+    When UFile(s) or SFile(s) are included into a module, autenticaiton will be 
+    required to view the module, however if these are not included no authentication
+    will be required to view. 
+
+The permission to view a module is managed by the viewing cost for that module.
+This is a tri-state variable for which the following values will have the
+corresponding effect on how the module is published.
+
+viewing cost = null (default)
+  Module unpublished - no one can view 
+
+viewing cost = 0
+  Module published free - anyone can view
+
+viewing cost = positive integer
+  Module published behind paywall - anyone who pays may view
+
 .. _`ufile-writing-permission`:
 
-UFile (UValue) Writing
+UFile (UValue) writing
 ^^^^^^^^^^^^^^^^^^^^^^
 
 UFiles permission levels for writing are set by the owner to have one of these
@@ -69,7 +93,7 @@ hand, you often want users to be able to set their own value.
 
 .. _`ufile-reading-permission`:
 
-UFile (UValue) Reading
+UFile (UValue) reading
 ^^^^^^^^^^^^^^^^^^^^^^
 
 UFiles permission levels for reading are set by the owner to have one of these

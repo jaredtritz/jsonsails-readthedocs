@@ -26,8 +26,8 @@ value persists to the value owned by the authentication identity.
 
 See also
 
-* :ref:`ufile-writing-permission`
 * :ref:`ufile-writing-modulejs`
+* :ref:`ufile-writing-permission`
 
 Reading from UFiles
 ^^^^^^^^^^^^^^^^^^^
@@ -37,7 +37,6 @@ is then modified, persisted, or refreshed by the module code.
 
 See also 
 
-* :ref:`uvalue-format`
 * :ref:`ufile-writing-modulejs`
 * :ref:`ufile-reading-permission`
 * :ref:`ufile-valet`

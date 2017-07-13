@@ -45,12 +45,13 @@ releasing content.
 Online marketplace
 ^^^^^^^^^^^^^^^^^^
 
-One way to grant permission is in exchange for payment.  When you build
-something, sell it! Or, when you want to use something, buy it!  Of course
-JSonSails supports free transactions, but we've also integrated the the ability
-to charge others by credit card for use of a resource.  If we've collected on a
-payment via credit card, then at the end of each month we'll settle up with the
-Payee via checks in the mail.
+JSonSails integrates permission and payments so that when you build something,
+you can sell it! Conversely, when you use something from user data to
+configuring a module, perhaps you'll buy it rather than build your own!  Of
+course JSonSails supports free transactions, but we've integrated the the
+ability to charge others by credit card for use of a resource.  We collected
+payments via credit card, and reconcile with the Payee each month by sending
+checks in the mail.
 
 Technical developers
 ^^^^^^^^^^^^^^^^^^^^
