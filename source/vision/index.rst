@@ -4,6 +4,25 @@ Vision
 JSonSails is a Web Application Framework (WAF) which is designed to make
 the creation and management of personalized web content easier.
 
+In-browser Development Environment (IDE)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _JSFiddle: https://jsfiddle.net/
+
+JSonSails offers a minimalist but complete "in browser" development
+environment. The IDE doesn't require any special configuration or setup, and is
+meant to eliminate the need for setting up personal development environments.
+
+We take inspiration from other online web coding environments like JSFiddle_,
+and integrate a code editor into the IDE, however the IDE is designed to
+support both coding and non-coding tasks.  For example, the IDE supports
+reviewing and editing code, as well as creating new resources and content by
+borrowing and combining existing resources. It also supports configuring, and
+releasing content.  
+
+Pesonalized modules
+^^^^^^^^^^^^^^^^^^^
+
 An example of personalized web content is an online treatment plan, which
 guides patients through a tailored medical treatment.  In this case content is
 determined by personal information about the patient. This information might be
@@ -25,22 +44,6 @@ management in creating data driven web applications.  Thus we expect that for a
 wide range of web content and applications it will be easier to develop,
 deploy, and maintain in this environment. For example, we also envision the use
 of JSonSails for delivering general content similar to WordPress_.
-
-In-browser Development Environment (IDE)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _JSFiddle: https://jsfiddle.net/
-
-JSonSails offers a minimalist but complete "in browser" development
-environment. The IDE doesn't require any special configuration or setup, and is
-meant to eliminate the need for setting up personal development environments.
-
-We take inspiration from other online web coding environments like JSFiddle_,
-and integrate a code editor into the IDE, however the IDE is designed to
-support both coding and non-coding tasks.  For example, the IDE supports
-reviewing and editing code, as well as creating new resources and content by
-borrowing and combining existing resources. It also supports configuring, and
-releasing content.  
 
 Online marketplace
 ^^^^^^^^^^^^^^^^^^
