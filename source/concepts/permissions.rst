@@ -27,8 +27,8 @@ If the same resource has been included multiple ways, but one way has not been
 permitted, the item is not loaded.
 
 When you want to use someone else's resource as part of your module the first
-step is to request it by simply including it.  Then one of several things will 
-happen then depending on what the price.
+step is to request it by simply including it.  One of the following will 
+then happen depending on the price.
 
 price = null (default)
   Owner will have to review the request and can then either permit for free, or set
@@ -54,8 +54,8 @@ aggregates all requested for objects owned by the authenticated user.
 
 .. _`module-viewing-permission`:
 
-Permission to view
-^^^^^^^^^^^^^^^^^^
+Permission to view module
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
 

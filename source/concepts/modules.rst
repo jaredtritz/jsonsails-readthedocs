@@ -8,13 +8,12 @@ browsers.
 Rendering
 ^^^^^^^^^
 
-To an end user modules appear as an ordinary web page, but behind the scenes
-modules are actually rendered in the browser by the JSonSails rendering engine.
-The rendering engine receives the instructions about how to render the module
-from the server, rather than receiving the content itself.  While many modern
-web applications utilize this technique to create dynamic content client side,
-JSonSails takes the technique to a whole new level.  Mainly, we provide
-developers with simple, flexible, and powerful abstraction of client rendering.
+The client browser first loads the JSonSails rendering engine, and then the
+module "bundle" which consists of the module's code and data.  The rendering
+engine first collects the css from all nodes and added to the document head in
+a style tag.  Then the HTML from all the nodes is rendered into the document
+breadth first from the root.  After that, the JS is rendered breadth first as
+well.
 
 .. _`module-config`:
 

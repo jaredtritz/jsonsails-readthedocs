@@ -19,6 +19,5 @@ key concepts in more detail.
     uploads 
     folders 
     permissions
-    rendering
     data_management
 
