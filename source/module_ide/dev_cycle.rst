@@ -2,6 +2,10 @@
 Edit/Preview
 ============
 
+.. note::
+
+  The URL of the development interface (IDE) for a module is: jsonsails.com/module/#/edit
+
 Module development is an iterative process of editing and previewing, and
 toggling between these modes is achieved with a radio button in the IDE top
 panel. 

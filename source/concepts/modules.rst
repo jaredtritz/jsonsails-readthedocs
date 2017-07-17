@@ -5,12 +5,14 @@ Modules
 Modules have a unique URL associated to them and are viewable in most web
 browsers.  
 
+.. _`rendering`:
+
 Rendering
 ^^^^^^^^^
 
 The client browser first loads the JSonSails rendering engine, and then the
 module "bundle" which consists of the module's code and data.  The rendering
-engine first collects the css from all nodes and added to the document head in
+engine then collects the css from all nodes and adds them to the document head in
 a style tag.  Then the HTML from all the nodes is rendered into the document
 breadth first from the root.  After that, the JS is rendered breadth first as
 well.

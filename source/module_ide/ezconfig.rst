@@ -2,13 +2,12 @@
 Ez Configuration
 ================
 
-Module configuration is designed at the root node, and for a reference module
-the config GUI is exposed through the refmod node.
-
 .. note::
 
-  The config interface will eventually be accessible by its own module specific url,
-  but for now is embedded in the main IDE interface for the module.
+  The URL of the config interface (ICE) for a module is: jsonsails.com/module/#/config
+
+Module configuration is designed at the root node, and for a reference module
+the config GUI is exposed through the refmod node.
 
 .. _`refnode-config-script`:
 
