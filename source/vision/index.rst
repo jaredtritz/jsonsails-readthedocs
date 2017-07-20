@@ -4,8 +4,8 @@ Vision
 JSonSails is a Web Application Framework (WAF) designed to make the creation
 and management of personalized web content easier.
 
-Pesonalized modules
-^^^^^^^^^^^^^^^^^^^
+Pesonalized modules & user data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An example of personalized web content is an online medical treatment plan,
 which guides patients through a tailored treatment experience.  In this case
