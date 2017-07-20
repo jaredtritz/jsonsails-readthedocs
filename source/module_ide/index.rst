@@ -1,5 +1,5 @@
-Module IDE
-==========
+Development (IDE)
+=================
 
 The Integrated Development Environment runs in the web browser (Chrome only)
 and enables configuration of existing modules through a reference, as well as

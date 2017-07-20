@@ -1,6 +1,6 @@
 
-Ez Configuration
-================
+Module Config
+=============
 
 .. note::
 

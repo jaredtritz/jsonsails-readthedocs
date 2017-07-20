@@ -26,6 +26,7 @@ Welcome to JSonSails.com_ docs
     :caption: Interface Help
 
     module_ide/index
+    module_ice/index
     setup/index
     folders/index
     accounting/index
