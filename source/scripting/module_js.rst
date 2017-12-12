@@ -52,6 +52,25 @@ to scope a DOM search. Access to node is managed through a subset of the JSonSai
     // from the Module JS
     js.node.*
 
+js.node.dom.querySelector(*) is particularly useful for handling DOM search, and should be used especially when 
+a refernce to the module will be taken later.  This search pattern will ensure the search scope is 
+limited to the specific reference and not all similiar references on a page.  Here are some examples
+of how to use this kind of dom search:
+
+.. code-block:: javascript
+    
+    // finding by class (recommended)
+    var next_button = js.node.dom.querySelector('.next')
+    var prev_button = js.node.dom.querySelector('.prev')
+    var submit_button = js.node.dom.querySelector('.submit')
+    var page_indicator = js.node.dom.querySelector('.page-count')
+    // setting 
+    js.node.dom.querySelector('h2').textContent = js.config.question
+    js.node.dom.querySelector('input').value = js.ufile.answer.value
+
+Finding by ID is not recommended b/c browser implementation is generally not reliable since it sometimes
+assumes IDs are unique and uses the old global search method which results in an unscoped result.
+
 Logging
 ^^^^^^^
 
