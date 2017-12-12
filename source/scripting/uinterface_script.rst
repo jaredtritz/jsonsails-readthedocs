@@ -11,3 +11,12 @@ contexts.
 .. literalinclude:: ../comments/UFileWrapper.es6_uinterface-script-format.js
     :language: javascript
 
+If the serialize and deserialize methods are not over-written above, the
+following defaults are used:
+
+.. literalinclude:: ../comments/render_common.es6_default-serialize.js
+    :language: javascript
+
+.. literalinclude:: ../comments/render_common.es6_default-deserialize.js
+    :language: javascript
+
