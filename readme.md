@@ -11,6 +11,7 @@ node generate_docs.js
 
 #### Reminders
 
-* edit file_list in extract_doc_strings.py to ensure parsing of doc strings from source
-* ... 
+* edit "file_list" array in "extract_doc_strings.py" to ensure parsing of doc strings from source
+* edit the "writeDoc(...)" lines in the "generate_docs.js" to ensure extracted doc strings get into doc
+* 
 
