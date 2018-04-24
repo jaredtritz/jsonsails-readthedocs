@@ -13,7 +13,7 @@ node generate_docs.js
 
 snippets
 * edit "file_list" array in "extract_doc_strings.py" to ensure parsing of doc strings from source into doc string files
-* comment format: '// COMMENT_NAME: default-serialize'
+* comment format: `// COMMENT_NAME: default-serialize`
 * s
 * add literalinclude to rst file(s) appropriatly to bring whole file in at that location
 
