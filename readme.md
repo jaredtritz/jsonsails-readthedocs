@@ -1,3 +1,4 @@
+#### Basics
 
 ```
 # activate node
@@ -10,6 +11,6 @@ node generate_docs.js
 
 #### Reminders
 
-* one
-* two
+* edit file_list in extract_doc_strings.py to ensure parsing of doc strings from source
+* ... 
 
