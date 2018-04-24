@@ -8,8 +8,8 @@ cd src/javascript/docgen
 node generate_docs.js
 ```
 
-####Reminders
+#### Reminders
 
-*one
-*two
+* one
+* two
 
