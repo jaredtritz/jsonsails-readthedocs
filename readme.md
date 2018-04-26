@@ -1,11 +1,12 @@
-#### Basics
 
-#### Easy methodd
+#### Easy method of re-building doc
 
 ```
 # run bash script for building
 ./auto_build.sh 
 ```
+
+#### Detailed method
 
 ```
 # activate python virtual env
@@ -40,4 +41,7 @@ auto-gen doc
 * http://usejsdoc.org/
 * https://github.com/jsdoc2md/jsdoc-to-markdown
 
-
+updating live doc
+* git commit -am "msg about the update"
+* git push
+* read-the-docs is will auto-syc with this repo on github
