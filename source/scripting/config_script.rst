@@ -11,6 +11,15 @@ various config elements.
 .. literalinclude:: ../comments/ConfigApi.jsx_add-label-format.js
     :language: javascript
 
+.. literalinclude:: ../comments/ConfigApi.jsx_add-textarea-format.js
+    :language: javascript
+
+.. literalinclude:: ../comments/ConfigApi.jsx_add-input-format.js
+    :language: javascript
+
+.. literalinclude:: ../comments/ConfigApi.jsx_short-add-plus-area-example.js
+    :language: javascript
+
 .. literalinclude:: ../comments/ConfigApi.jsx_add-plus-area-format.js
     :language: javascript
 
