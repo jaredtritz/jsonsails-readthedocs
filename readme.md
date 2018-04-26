@@ -1,12 +1,28 @@
 #### Basics
 
+#### Easy methodd
+
 ```
+# run bash script for building
+./auto_build.sh 
+```
+
+```
+# activate python virtual env
+path/to/venv/bin/activate
+
 # activate node
 nvm use v6.9
+
+# extract doc strings from source
+python extract_doc_strings.py
 
 # run build script
 cd src/javascript/docgen
 node generate_docs.js
+
+# build doc using sphinx
+make html
 ```
 
 #### Reminders
