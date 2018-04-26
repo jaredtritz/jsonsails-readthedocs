@@ -2,6 +2,12 @@
 #### Easy method of re-building doc
 
 ```
+# activate python virtual env
+path/to/venv/bin/activate
+
+# activate node
+nvm use v6.9
+
 # run bash script for building
 ./auto_build.sh 
 ```
