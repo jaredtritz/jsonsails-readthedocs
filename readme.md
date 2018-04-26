@@ -41,7 +41,7 @@ auto-gen doc
 * http://usejsdoc.org/
 * https://github.com/jsdoc2md/jsdoc-to-markdown
 
-updating live doc
+updating read-the-docs
 * git commit -am "msg about the update"
 * git push
 * read-the-docs is will auto-syc with this repo on github
