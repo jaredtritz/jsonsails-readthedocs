@@ -9,8 +9,34 @@ Standardized API for generating a module's config GUI
 
 
 * [ConfigApi](#ConfigApi)
+    * [.addText(initial, callback)](#ConfigApi+addText)
     * [.addLabel(text)](#ConfigApi+addLabel)
     * [.addPlusArea(initial, callback, validate, info, limit)](#ConfigApi+addPlusArea)
+
+<a name="ConfigApi+addText"></a>
+
+```eval_rst
+.. _`ConfigApi+addText`:
+```
+
+### configApi.addText(initial, callback)
+<table>
+  <thead>
+    <tr>
+      <th>Param</th><th>Type</th><th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td>initial</td><td><code>string</code></td><td><p>text to initialize input</p>
+</td>
+    </tr><tr>
+    <td>callback</td><td><code>function</code></td><td><p>process the text</p>
+</td>
+    </tr>  </tbody>
+</table>
+
+Add text input to config GUI
 
 <a name="ConfigApi+addLabel"></a>
 
@@ -49,10 +75,10 @@ Add text label to config GUI
   </thead>
   <tbody>
 <tr>
-    <td>initial</td><td><code>array</code></td><td><p>...</p>
+    <td>initial</td><td><code>array</code></td><td><p>list of text items</p>
 </td>
     </tr><tr>
-    <td>callback</td><td><code>function</code></td><td><p>...</p>
+    <td>callback</td><td><code>function</code></td><td><p>-</p>
 </td>
     </tr><tr>
     <td>validate</td><td><code>function</code></td><td><p>...</p>
@@ -66,5 +92,5 @@ Add text label to config GUI
     </tr>  </tbody>
 </table>
 
-Add ??? to config GUI
+Add list of text area items to config GUI
 
