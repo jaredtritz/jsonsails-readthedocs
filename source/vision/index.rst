@@ -1,7 +1,7 @@
 Vision
 ======
 
-JSonSails is a Web Application Framework (WAF) designed to make the creation
+JSonSails is an application engine designed to make the creation
 and management of personalized web content easier.
 
 Pesonalized modules & user data
